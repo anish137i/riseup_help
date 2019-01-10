@@ -1,0 +1,65 @@
+@title = 'Sécurité'
+
+h1. Commencez ici
+
+Peu de temps devant vous? Trop occupé-e pour résister à l'oppression généralisée ou pour tenter de bâtir un monde meilleur? Super! Nous croyons que votre aventure vers une meilleure sécurité informatique devrait commencer ici. Avec ces étapes faciles à réaliser, tout le monde peut réduire la vulnérabilité de leurs systèmes informatiques.
+
+# [[Adoptez une meilleure hygiène informatique vis à vis vos courriels => message-hygiene]]: La vaste majorité des attaques informatiques proviennent de votre boîte courriel. Apprenez à naviguer vos courriels et vos applications de messagerie avec prudence.
+# [[Utilisez un gestionnaire de mots de passe => passwords]]: En utilisant un gestionnaire de mots de passe, il est possible d'éliminer toute une catégorie d'attaques informatiques.
+# [[Chiffrez vos appareils => device-encryption]]: Le chiffrement de vos appareils est une fonctionnalité qui fait partie de votre système d'exploitation et qui est simple à mettre en place.
+# [[Adoptez de meilleures pratiques de naviguation sur le web => better-web-browsing]]: En changeant les paramètres par défaut de votre navigateur web et en installant certaines extensions, vous pouvez grandement améliorer votre sécurité sur le web.
+# [[Gardez vos programmes à jour => software-safety]]: Maintenir vos programmes à jour est une manière simple et efficace de rester en sécurité.
+
+h1. Pourquoi la sécurité est importante
+
+L'augmentation de l'importance de l'information et de la communication a apporté avec elle un autre phénomène : l'élévation d'une *société de surveillance*. Vous pouvez entendre par surveillance une tentative des lobbys pour [_maintenir leur dominance en insérant un contrôle de la communication_].
+
+*Les États-nations* ont répondu à la nouvelle technologie des communications en poursuivant une infrastructure qui peut être facilement redirigée  pour un total contrôle du social. Contrairement aux ères de communications précédentes, la nature de la technologie présente requiert que nos informations soient sécurisées de manière frustrante pour les gouvernements, ou bien de façon complètement non-sécurisée qui permette un contrôle étendu et détaillé de populations entières.
+
+*Les entreprises* ont découvert que la collecte et l'analyse d'une quantité massive de données personnelles est nécessaire si elles souhaitent rester dans la compétition d'un monde riche en information. En particulier, la quasi-totalité des publicités bascule sur une démarche de pistage de notre comportement personnel.
+
+Dans ce contexte, une communication sécurisée est devenue vitale.
+
+* La surveillance que l'État opère possède une longue histoire résultant à la répression des mouvements sociaux.
+Même indirectement, la surveillance effrénée a un effet effrayant sur les mouvements sociaux.
+* La surveillance exercée par les sociétés est autant sérieuse que celle exercée par l'État. Non seulement les quantités massives de données des utilisateurs d'internet peuvent être facilement réutilisées comme répression directe, mais les sociétés sont désormais sur le point d'obtenir un pouvoir sans précédent sur les consommateurs.
+* Lorsque les gens prennent connaissance de la hausse de la surveillance, ils commencent à se sentir débordés. Certains décident qu'il est impossible d'être en sécurité, ils se résignent eux-mêmes à vivre sous une surveillance perpétuelle ou bien abandonnent toutes formes de communications numériques. Chez Riseup, on croit qu'il y a une troisième possibilité : notre but est de créer un haut niveau de sécurité, simple et accessible pour tous.
+
+Le principal du conflit contre la surveillance prend place à travers le système légal et nous applaudissons ceux qui travaillent dans cette arène. En contraste, Riseup se concentre sur la technologie. Dès lors que les lois sont injustes, nous croyons qu'une nouvelle réalité technique est nécessaire de manière à altérer les possibilités légales et politiques.
+
+h1. Survol des types de sécurité
+
+<table class="table table-striped">
+<tr>
+<th class="col-md-2">Type de sécurité</th>
+<th>Qu'est-ce?</th>
+<th>Quand est-ce utile?</th>
+</tr>
+<tr>
+<td>[[Sécurité humaine -> human-security]]</td>
+<td>Simple changement que vous pouvez apporter à votre *comportement*.</td>
+<td>Empêche l'erreur humaine d'être le maillon faible dans n'importe quel système de sécurité.</td>
+</tr>
+<tr>
+<td>[[Sécurité de l'appareil -> device-security]]</td>
+<td>Démarche visant à rendre *votre ordinateur ou votre téléphone* moins vulnérable aux attaques.</td>
+<td>Utile quand bien même votre dispositif tombe *physiquement* entre les mains d'un malfrat.</td>
+</tr>
+<tr>
+<td>[[Sécurité des messages -> message-security]]</td>
+<td>Voies de chiffrement des *messages individuels* que vous envoyez et recevez.</td>
+<td>Requis si vous désirez assurer la *confidentialité* d'un message particulier pendant son stockage et sa transmission.</td>
+</tr>
+<tr>
+<td>[[Sécurité réseau -> network-security]]</td>
+<td>Blocage des sites qui vous traquent et chiffrement de votre *trafic internet*.</td>
+<td>Protège contre le comportement de la traque, attaque de compte, censure, mappage du réseau social, mise sur écoute et publicité.</td>
+</tr>
+</table>
+
+Riseup propose principalement des services qui s'adressent à la [[Sécurité réseau -> network-security]]:
+
+* Parce que la surveillance réseau est véritablement pénétrante, c'est un problème social qui affecte tout le monde en permanence. En contrepartie, la sécurité des appareils et de la messagerie est importante pour les personnes qui sont ciblées de manière individuelle par la répression des autorités. 
+* Améliorer votre sécurité réseau est vraiment simple, il n'en va pas de même pour la sécurité des dispositifs et des messages
+
+Une fois cela posé, il est important pour les personnes qui font face à la perspective de la répression ciblée d'employer de la sécurité de leur matériel et de leur communications, bien que cela puisse prendre un certain temps à apprendre. Ces pages d'aide vous aideront en cette voie.

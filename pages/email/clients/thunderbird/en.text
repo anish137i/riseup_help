@@ -2,9 +2,9 @@
 
 h2. What is Thunderbird?
 
-!>img/reclaimyourinbox.png!
+p(pull-right). !(image-right)reclaimyourinbox.png!
 
-Thunderbird is the mail client recommended by riseup.net. It is Free Software and is available for Linux, Windows, and Mac OS X. You can download Thunderbird "from the thunderbird website":http://www.mozillamessaging.com/en-US/thunderbird/download. As Free Software, Thunderbird is part of the digital commons, a kind of common treasury for all. Outlook, on the other hand, is Microsoft's tool for world domination.
+Thunderbird is the mail client recommended by riseup.net. It is Free Software and is available for Linux, Windows, and Mac OS X. You can download Thunderbird "from the thunderbird website":https://www.thunderbird.net/en-US/thunderbird/all/. As Free Software, Thunderbird is part of the digital commons, a kind of common treasury for all. Outlook, on the other hand, is Microsoft's tool for world domination.
 
 Thunderbird has many features, including: IMAP and POP support, multiple accounts, quick search, spell as you type, advanced spam controls, RSS, virtual folder views, message filtering, addressbook, and support for OpenPGP encryption.
 
@@ -55,29 +55,26 @@ h2. What is next?
 
 h3. Enhance your email security
 
-# Ideally, you should *not* use StartTLS. Instead, it is much better to use regular TLS. For added security, go to your account settings and change your connection type from StartTLS to TLS.
-# There are many vulnerabilities with how secure connections work. If you need high security, you should always connect to Riseup services using the [[Riseup VPN => vpn]]. This will prevent a long list of potential attacks against your communication.
-# For enhanced [[message security => message-security]], consider [[setting up Enigmail with Thunderbird => /security/message-security/encrypted-email/enigmail]] to get [[OpenPGP => /security/gpg-keys]] setup.
+<%= render :partial => 'enhance-security' %>
 
 h3. Add some extensions
 
 We suggest these extensions for Thunderbird:
 
+* [[Enigmail => /security/message-security/encrypted-email/enigmail]]: get started in no time [[encrypting and decrypting emails->message-security]] and verifying that emails you receive are from the people who you expect them to be.
 * "Display Quota":https://addons.mozilla.org/thunderbird/addon/881: This extension will display the current status of your IMAP quota in thunderbird's statusbar and will warn you when you reach a configurable limit.
-* [[Enigmail => /security/message-security/encrypted-email/enigmail]]: get started in no time encrypting and decrypting emails and verifying that emails you receive are from the people who you expect them to be.
 
-h3. Hidden options that radically improve Thunderbird speed
+h3. Use hidden options to speed up Thunderbird
 
-By default, thunderbird talks to the email server every time you open an email or change its state. This can feel really sluggish on a slower network connection or if the Riseup server is busy.
+Per default every time you open a mail or change the status Thunderbird connects to the mail server. For slow connections or when Riseup's servers are busy this can be pain.
 
-Happily, there is something you can do about it! Thunderbird has some hidden settings to make it sync entirely with the mail server when it connects. This will generally make your experience much more pleasant and snappy.
+Luckily there is a fix: Thunderbird has some hidden options, that a does a complete sync when connecting the server. This will speed up your workflow and makes your day better.
 
-To set these options, go to *Edit* menu > *Preferences* item > *Advanced* tab > *Config Editor* button.
+To set this, go to the menu *Edit > Preferences > Advanced > General > Config Editor*
 
-* use_status_for_biff: set this to *false*
-* mail.server.default.autosync_offline_stores: set this to *true*
+* set @use_status_for_biff@ to *false*
+* set @mail.server.default.autosync_offline_stores@ to *true*
 
 h3. Consider automatically deleting old email
 
-Do you really need to keep all that email? You can configure thunderbird to automatically delete your old email. To do this, navigate to Account Settings --> Local Folders --> Disk space. You can set thunderbird to delete messages once they get to be X days old.
-
+Do you really need to keep all that email? You can configure thunderbird to automatically delete your old email. To do this, navigate to *Account Settings --> Local Folders --> Disk space*. You can set thunderbird to delete messages once they get to be X days old.

@@ -1,0 +1,3 @@
+@title = "Dispositivos seguros"
+
+<%= child_summaries heading: 1, include_toc: true %>

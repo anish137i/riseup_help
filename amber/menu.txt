@@ -14,7 +14,9 @@ email
     apple-mail
     ios-mail
     microsoft-outlook
-    postbox
+    sylpheed
+    claws
+    mutt
   webmail
     address-book
     where-is-imp
@@ -49,47 +51,55 @@ chat
   clients
     adium
     pidgin
-  security
+  chat-security
     otr
 vpn
+  vpn-black
+  vpn-red
+    linux
+    mac
+    windows
+    ios
+    troubleshooting
   why-is-needed
   how-vpn-works
-  how-to
-    android
-    linux
-  troubleshooting
-  faq
   security-issues
-  legacy
-    vpn-howto
-      linux
-      mac
-      windows
-    troubleshooting
+  betatest
 security
   privacy
   surveillance
   human-security
+    message-hygiene
+    passwords
   device-security
+    software-safety
+    device-encryption
+    mobile-devices
   message-security
     openpgp
       gpg-best-practices
       gpg-keys
       enigmail
+      key-transition
     otr
   network-security
     secure-connections
     better-web-browsing
-    tor
     certificates
     riseup-ca
     starttls
+    tor
+      onionservices-best-practices
   resources
     radical-servers
 about-us
   canary
   contact
   newsletter
+    2018
+    2017
+    2016
+    2015
     2014
     2013
     2012
@@ -101,4 +111,3 @@ about-us
   politics
   press
   projects
-

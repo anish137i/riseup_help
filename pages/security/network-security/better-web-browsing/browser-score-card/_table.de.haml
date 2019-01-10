@@ -1,0 +1,26 @@
+%table.table.table-striped.table-condensed
+  %tr
+    %th(class="col-md-2") Browser
+    %th Cookie-Kontrolle
+    %th Drittanbieter Cookies
+    %th Tracking Opt-out
+  %tr
+    %td Firefox
+    %td <b>C</b><br> Etwas Filterlisten-Kontrolle
+    %td <b>D</b><br> Aktiviert als Standard
+    %td <b>C-</b><br> Unterstützt nur "Do Not Track"-Kopfzeile, ausgeschaltet als Standard.
+  %tr
+    %td Edge
+    %td <b>?</b>
+    %td <b>F</b><br>Aktiviert als Standard und manchmal trotz Ausschalten geschickt.
+    %td <b>B</b><br>Unterstützt "Do Not Track"-Kopfzeie und "Tracking Protection Lists". (welche als Standard eingeschaltet sind?)
+  %tr
+    %td Chrome
+    %td <b>A</b><br>Gute Kontrolle über Cookie-Filterlisten</a>
+    %td <b>F</b><br>Aktiviert als Standard, und manchmal trotz Ausschalten geschickt.
+    %td <b>D-</b><br>Schreckliche Unterstützung für Anti-Tracking, nur verfügbar als optionale Erweiterung <a href="https://chrome.google.com/webstore/detail/hhnjdplhmcnkiecampfdgfjilccfpfoe">Keep My Opt-Outs</a>.
+  %tr
+    %td Safari
+    %td <b>?</b>
+    %td <b>B+</b><br>Ausgeschaltet als Standard, aber manchmal trotz Ausschalten geschickt.
+    %td <b>F</b><br>Keine Funktion für Anti-Tracking.

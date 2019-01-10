@@ -5,19 +5,35 @@ en:
   missing_translation: "This page has not yet been translated from the English."
   support_riseup: "Support Riseup!"
   motto: "Get off the internet, I will see you in the streets."
-  footer_tagline: "This site is run by riseup.net, your friendly autonomous tech collective since 1999."
-  contribute_to_help: "You are invited to contribute content and translations for these pages."
+  footer_tagline: "This site is run by Riseup, your friendly autonomous tech collective since 1999"
+  contribute_to_help: "Please edit this site"
   system_updates: "System Updates"
   # quick links:
   link_privacy: "Privacy Policy"
   link_about_us: "About Us"
   link_status: "System Status"
-  link_support: "Support Riseup"
+  link_support: "Donate!"
   # services:
-  link_lists: "Mailing Lists"
+  link_lists: "Lists"
   link_email: "Email"
+  link_pad: "Pad"
+  link_share: "Share"
   link_chat: "Chat"
   link_groups: "Groups"
+
+  # Months
+  january: "January"
+  february: "February"
+  march: "March"
+  april: "April"
+  may: "May"
+  june: "June"
+  july: "July"
+  august: "August"
+  september: "September"
+  october: "October"
+  november: "November"
+  december: "December"
 
   # Donation page
   donation_processor: "Donation Processor"
@@ -34,21 +50,37 @@ en:
   quarterly: "Quarterly"
   recurring_donation: "Recurring Donation"
   one_time_donation: "One Time Donation"
+  micropayments: "Micropayments"
+  micropayments_note: "For amounts less than US$12 per payment, please use micropayments! It will save us a lot of money."
 
   bitcoin: "Bitcoin"
-  bitcoin_note: "Decentralized peer-to-peer electronic crypto-currency"
-  bitcoin_description: "Bitcoin is a decentralized peer-to-peer electronic crypto-currency. Bitcoin is also a free way to send money overseas. If you would like to use bitcoin to send riseup money, we will generate a new, unique bitcoin address for you to use for your donation. Just click on the button below for a new bitcoin address to use."
-  bitcoin_grab_address: "Grab a bitcoin address"
+  bitcoin_note: "Digital currency"
+  bitcoin_description: "Bitcoin is a decentralized peer-to-peer electronic cryptocurrency."
+  non_segwit_description: "These are old style addresses, backward compatible with all wallets."
+  segwit_description: "These are new style Bech32 addresses, only compatible with some wallets."
+
+  grab_address: "Grab a new address"
   generate: "Generate"
 
-  dwolla: "Dwolla"
-  dwolla_note: "Very low fees. Requires registration and US bank account"
-  dwolla_description: "Dwolla is a really cheap way to send virtual cash, although it requires that you create a Dwolla account linked to a US bank account. Dwolla supports recurring donations."
+  zcash: "Zcash"
+  zcash_note: "Anonymous digital currency"
+  zcash_description: "Zcash is a cryptocurrency similar to Bitcoin, but with the added benefit of anonymity."
+
+  monero: "Monero"
+  monero_note: "Private and censorship-resistant currency"
+  monero_description: "Monero is a cryptocurrency similar to Bitcoin, with a focus on private and censorship-resistant transactions."
+
+  faircoin: "FairCoin"
+  faircoin_description: "FairCoin is run by a non-profit network of radical activists, propagates the non-speculative values of the solidarity economy, and uses less electricity than other cryptocurrencies."
+
+  bcash: "BCash"
+  bcash_description: |
+    BCash a hard fork of Bitcoin and is sometimes called Bitcoin Cash.
+    BCash is not Bitcoin. If you send Bitcoin to a BCash address, the money will be lost forever.
 
   paypal: "Paypal"
   paypal_note: "Works from many countries."
   paypal_description: "Paypal accepts credit cards and supports recurring donations (for recurring donations, a PayPal account is required)."
-
   wepay: "WePay"
   wepay_note: "An alternative to PayPal."
   wepay_description: "WePay is a nice alternative to PayPal. You can use WePay without creating an account, and it supports credit cards."
@@ -56,8 +88,3 @@ en:
   flattr: "Flattr"
   flattr_note: "Micropayments add up."
   flattr_description: "Flattr is a micropayment system that allows you to support multiple projects."
-
-  gratipay: "Gratipay"
-  gratipay_note: "Recurring micropayments add up."
-  gratipay_description: "Gratipay is another micropayment system that allows you to give weekly to the projects you like."
-

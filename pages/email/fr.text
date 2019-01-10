@@ -1,15 +1,15 @@
 @title = 'Courriel Riseup'
 @nav_title = 'Courriel'
 
-!>airmail.jpg!
+p(pull-right). !(image-right)airmail.jpg!
 
-Bienvenu sur la page d'aide pour les courriels riseup.net. Ici, vous trouverez de l'information sur les *comptes courriel* riseup.net
+Bienvenue sur la page d'aide pour les courriels riseup.net. Ici, vous trouverez de l'information sur les *comptes courriel* riseup.net
 
-Si vous ne trouvez pas ce que vous cherchez, "remplissez un billet de dépannage":https://user.riseup.net/forms/. Une fois que l'on a répondu à vos questions, faites nous savoir en quoi ces pages d'aide pourraient être améliorées.
+Si vous ne trouvez pas ce que vous cherchez, "remplissez un billet de dépannage":https://support.riseup.net/fr/topics/new. Une fois que l'on a répondu à vos questions, faites nous savoir en quoi ces pages d'aide pourraient être améliorées.
 
 h2. Premiers pas
 
-Visitez "user.riseup.net":https://user.riseup.net. À partir de là, vous pouvez changer votre mot de passe, ajouter des pseudonymes d'adresse courriel, créer des filtres pour vos courriels, changer votre quota ou alors demander de l'aide.
+Visitez "account.riseup.net":https://account.riseup.net. À partir de là, vous pouvez changer votre mot de passe, ajouter des pseudonymes d'adresse courriel, créer des filtres pour vos courriels, changer votre quota ou alors demander de l'aide.
 
 Nous détruisons automatiquement l'information que vous nous avez donnée lors de votre demande de compte courriel. Vous devriez penser à supprimer toute information permettant de vous identifier à partir de la configuration de votre compte, par exemple votre nom, date de naissance, question secrète et adresse courriel alternative. Cependant, si vous oubliez votre mot de passe et que cette information n'est pas remplie (ou vous avez oublié l'adresse alternative, ou alors elle n'est plus accessible), vous perdez accès à votre compte.
 
@@ -31,11 +31,10 @@ Les courriels dans certains [[dossiers spéciaux => email-folders]] sont supprim
 
 * *Corbeille*: supprimées après 21 jours.
 * *Spam*: supprimés après 7 jours.
-* *Envoyés*: supprimés après 120 jours.
 
 h3. Quota
 
-Pour plusieurs raisons, nous n'offrons pas beaucoup d'espace de stockage pour les courriels. Si vous avez besoin de plus d'espace, nous vous suggérons de les télécharger en utilisant un client de messagerie ou alors d'augmenter votre quota en visitant https://user.riseup.net. [[En savoir plus sur les quotas => quota]].
+Pour différentes raisons, nous ne pouvons fournir que 1 Gb d'espace de stockage pour les courriels. Si vous avez besoin de plus d'espace, nous vous conseillons de télécharger vos courriels à l'aide d'un client de messagerie. Nous vous encourageons à utiliser l'espace de stockage chiffré de votre compte si ce n'est pas déjà le cas (n'oubliez pas de sauvegarder le code de récupération!). [[En savoir plus sur les quotas => quota]].
 
 h3. Utiliser un client de messagerie
 

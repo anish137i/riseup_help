@@ -3,15 +3,23 @@
 @this.alias = '/canary'
 @toc = false
 
-!{float:right}canaryimg.jpg!
+<div class="row">
 
-h4{margin-left: 200px; margin-right:200px}. _*noun*_
+p(col-md-3). !canarypronounce.png!
 
-h4{margin-left: 200px; margin-right:200px}. _*1...*_ A small songbird in the finch family, _serinus canaria domestica,_ originally native to islands in the North Atlantic.
+<div class="col-md-6">
 
-!{float:left}canarypronounce.png!
+h4. _*noun*_
 
-h4{margin-left: 200px; margin-right:200px}. _*2...*_ A mechanism to test for unsafe conditions, originating from the use of canaries in coal mines to detect poisonous gases or cave-ins. If the canary died, it was time to get out of the mine. More recently, the term has been used by some online service providers to refer to an affirmative statement, updated regularly, that the provider has not been subjected to certain legal processes. If the statement is not updated in a timely fashion, users may infer that the canary statement may no longer be true.
+h4. _*1...*_ A small songbird in the finch family, _serinus canaria domestica,_ originally native to islands in the North Atlantic.
+
+h4. _*2...*_ A mechanism to test for unsafe conditions, originating from the use of canaries in coal mines to detect poisonous gases or cave-ins. If the canary died, it was time to get out of the mine. More recently, the term has been used by some online service providers to refer to an affirmative statement, updated regularly, that the provider has not been subjected to certain legal processes. If the statement is not updated in a timely fashion, users may infer that the canary statement may no longer be true.
+
+</div>
+
+p(col-md-3). !(pull-right image-right)canaryimg.jpg!
+
+</div>
 
 <pre>
 <%= render :file => 'canary-statement-signed.txt', :type => :raw %>
@@ -23,12 +31,14 @@ You should follow [[these instructions to download riseup's gpg key and verify t
 
 # Download the signed "canary statement":/about-us/canary/canary-statement-signed.txt
 # Then run this command in a terminal:
-<code>gpg --verify canary-statement-signed.txt</code>
-# You should get output that says:
+<code>gpg --auto-key-retrieve --verify canary-statement-signed.txt</code>
+# You should get output that is similar to the following (note the date will change, based on when the canary statement was signed):
 
-pre..
-gpg: Signature made Tue 30 Sep 2014 08:03:08 PM PDT
-gpg:           using RSA key 0x3043E2B7139A768E
+<pre>
+gpg: Signature made Tue 30 Oct 2018 08:26:08 PM PDT
+gpg:                using RSA key 4E0791268F7C67EABE88F1B03043E2B7139A768E
 gpg: Good signature from "Riseup Networks <collective@riseup.net>"
+Primary key fingerprint: 4E07 9126 8F7C 67EA BE88  F1B0 3043 E2B7 139A 768E
+</pre>
 
 p. You should make sure that it says "Good signature" in the output and confirm that the keyid matches the one you verified [[here earlier. => network-security/certificates#complete-verification]] If this text has been altered, then this information should not be trusted.

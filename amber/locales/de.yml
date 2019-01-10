@@ -1,9 +1,38 @@
 de:
   tags: "Tags"
   tag: "Tag"
-  related: "Related"
+  related: "verwandt"
   missing_translation: "Diese Seite ist noch nicht ins Deutsche übersetzt worden."
   support_riseup: "Unterstütze Riseup!"
+  motto: "Komm raus aus dem Internet, wir sehen uns auf den Straßen."
+  footer_tagline: "Diese Seite wird betrieben von riseup.net, deinem freundlichen autonomen Technikkollektiv seit 1999."
+  contribute_to_help: "Fühle dich eingeladen, Inhalt und Übersetzungen zu dieser Seite beizusteuern."
+  system_updates: "Systemmeldungen"
+  # quick links:
+  link_privacy: "Datenschutzrichtlinie"
+  link_about_us: "Über uns"
+  link_status: "Systemstatus"
+  link_support: "Unterstütze Riseup"
+  # services:
+  link_lists: "Emaillisten"
+  link_email: "Email"
+  link_share: "Teilen"
+  link_chat: "Chat"
+  link_groups: "Gruppen"
+
+  # Months
+  january: "Januar"
+  february: "Februar"
+  march: "März"
+  april: "April"
+  may: "Mai"
+  june: "Juni"
+  july: "Juli"
+  august: "August"
+  september: "September"
+  october: "Oktober"
+  november: "November"
+  december: "Dezember"
 
   # Donation page
   donation_processor: "Dienstleister"
@@ -20,19 +49,34 @@ de:
   quarterly: "vierteljährlich"
   recurring_donation: "Daueraufträge"
   one_time_donation: "Einmalige Spende"
+  micropayments: "Micropayments"
+  micropayments_note: "Für Beträge unter $12 bitte wir dich, eine Mikrozahlung (micropayment) zu verwenden. Dadurch sparen wir eine Menge Geld!"
 
   bitcoin: "Bitcoin"
   bitcoin_note: "dezentrale, elektronische Peer2Peer-Kryptowährung"
   bitcoin_description: "Bitcoin ist eine dezentrale, elektronische Peer-to-Peer Kryptowährung (Übersetzt: momentan nur für Computerfreaks zu empfehlen!). Bitcoin bietet die Möglichkeit Geld kostenfrei nach Übersee zu senden. Falls Du bitcoin nutzen willst, um Geld an Riseup zu senden, erstellen wir Dir eine neue, einzigartige bitcoin-Adresse für Deine Spende. Klicke einfach unten auf den Knopf, um eine neue bitcoin-Adresse zu generieren."
-  bitcoin_grab_address: "Hole Dir eine bitcoin-Adresse"
+  non_segwit_description: "Dies sind Adressen im alten Format, rückwärtskompatibel mit allen Wallets."
+  segwit_description: "Dies sind Adressen im neueren Bech32 Format, die nur mit bestimmten Wallets kompatibel sind."
+
+  grab_address: "Hole Dir eine Adresse"
   generate: "Erstellen"
 
-  dwolla: "Dwolla"
-  dwolla_note: "Sehr geringe Gebühren. Erfordert Registrierung und ein US-Bankkonto"
-  dwolla_description: "Dwolla ist eine relativ günstige Möglichkeit, virtuelles Geld zu versenden, benötigt allerdings ein mit einem US-Bankkonto verknüpftes Dwolla-Konto. Dwolla unterstützt Daueraufträge."
+  zcash: "Zcash"
+  zcash_note: "Anonyme digitale Währung"
+  zcash_description: "Zcash ist eine Kryptowährung ähnlich zu Bitcoin, hat aber den Vorteil der Anonymität."
+
+  monero: "Monero"
+  monero_note: "Anonyme digitale Währung"
+  monero_description: "Monero ist eine Kryptowährung ähnlich zu Bitcoin, mit besonderem Augenmerk auf Anonymität und Resistenz gegen Überwachung."
+
+  faircoin: "FairCoin"
+  faircoin_description: "FairCoin wird von einer Nonprofit-Organisation betrieben und verbraucht weniger Energie als andere Kryptowährungen."
+
+  bcash: "BCash"
+  bcash_description: "BCash ist eine Abspaltung (hard fork) von Bitcoin und wird auch Bitcoin Cash genannt. BCash und Bitcoin sind zwei verschiedene Währungen! Bitcoins, die an eine BCash-Adresse übertragen werden, sind unwiederbringlich verloren."
 
   paypal: "Paypal"
-  paypal_note: "Klappt von vielen Ländern der Welt"
+  paypal_note: "Funktioniert in vielen Ländern der Welt"
   paypal_description: "Paypal akzeptiert Kreditkarten und unterstützt Daueraufträge (für Daueraufträge ist ein Paypal-Konto nötig)."
 
   wepay: "WePay"
@@ -42,7 +86,3 @@ de:
   flattr: "Flattr"
   flattr_note: "Minispenden summieren sich!"
   flattr_description: "Flattr ist ein Überweisungssystem für Kleinstbeträge („Micropayment“), das es Dir ermöglicht, verschiedene Projekte zu unterstützen."
-
-  gratipay: "Gratipay"
-  gratipay_note: "regelmäßige Zahlungen summieren sich"
-  gratipay_description: "Gratipay ist ein weiteres micropayment-System, das es ermöglicht, wöchentliche Zahlungen einzustellen."

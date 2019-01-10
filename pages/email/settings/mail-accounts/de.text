@@ -1,0 +1,50 @@
+@title = "Emailkonten"
+
+h2. Wie erstelle ich einen E-Mail Account?
+
+Ein "Riseup Rot"-Konto ist nötig für E-Mail, Chat, VPN und "Riseup Support":https://support.riseup.net.
+
+Um ein Konto zu erstellen, brauchst Du eine Einladung.
+
+# Erhalte einen *Einladungs-Kode* von einem vertrauensvollen Menschen. Ein solcher kann unter https://account.riseup.net erstellt werden.
+# Benutze diesen auf https://account.riseup.net, um ein Konto zu erstellen.
+
+Anmerkungen:
+* Du brauchst bloß eine Einladung.
+* Neu erstellte Konten können keine Einladungs-Kodes erstellen.
+* Wegen vieler Anfragen von [[Spammern->spam]] und [[Scammern -> scams]] nach einem Konto waren wir gezwungen, einen Einladungskode für alle neuen Konten obligatorisch zu machen. Wir wissen, das nervt, aber weil wir keine Telefonnummer oder Zahlungsinformation verlangen, brauchen wir eine andere Möglichkeit, um Missbrauch vorzubeugen.
+
+h2. Wie ändere ich meinen Benutzernamen?
+
+# Melde dich auf https://account.riseup.net an
+# Klicke auf *My Settings*
+# Ändere deinen Benutzernamen
+# Klicke auf *Save*
+
+Du solltest die folgenden wichtigen Dinge beachten, bevor du deinen Benutzernamen änderst:
+
+* Dein Roundcube- bzw. Squirrelmail-Adressbuch wird verloren gehen. Wenn du dein Adressbuch dieser webbasierten E-Mail Programme behalten möchtest, solltest du folgende Dinge tun:
+
+# Exportiere dein Adressbuch von Roundcube oder Squirrelmail in eine Datei
+# Ändere deinen Benutzernamen
+# Importiere die Datei, die dein Adressbuch enthält, in Roundcube oder Squirrelmail.
+
+* Nachdem du deinen Benutzernamen geändert hast, solltest du möglicherweise deinen alten Benutzernamen als Alias für deinen Account eintragen. Somit verlierst du keine E-Mails. Falls du deinen Benutzernamen geändert hast, um Spam zu verhindern, überspringe diesen Schritt.
+* Sobald dein Benutzername geändert wurde, verwende diesen neuen Benutzernamen für die Anmeldung auf mail.riseup.net.
+
+h2. Wie kann ich meinen Account löschen?
+
+Folge einfach diesen Schritten:
+
+# Melde dich auf https://account.riseup.net an.
+# Klicke auf den *Close my email account*-Link.
+
+h2. Wie ändere oder lösche ich meine alternative E-Mail Adresse?
+
+Wir würden es bevorzugen, keine alternative E-Mail Adresse von dir zu speichern. Jedoch ist die alternative E-Mail Adresse zurzeit die einzige Möglichkeit, ein vergessenes Passwort zurückzusetzen.
+
+Um dies zu ändern:
+
+# Melde dich auf https://account.riseup.net an.
+# Klicke auf *My Settings*
+# Du kannst nun das Feld 'Alternate Email' ändern oder leeren.

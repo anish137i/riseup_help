@@ -1,23 +1,29 @@
 @title = 'Riseup Email'
 @nav_title = 'Email'
 
-!>airmail.jpg!
+p(pull-right). !(image-right)airmail.jpg!
 
-Welcome to riseup.net mail help. Here you will find information regarding riseup.net *mail accounts*.
+Welcome to Riseup email help.
 
-If you don't find what you are looking for [[fill out a help ticket => https://user.riseup.net/forms/]]. Once your question has been answered, please help us keep these pages updated by submitting any changes or additions you would like to share with other users.
+If you don't find what you are looking for [[fill out a help ticket => https://support.riseup.net/en/topics/new]]. Once your question has been answered, please help us keep these pages updated by submitting any changes or additions you would like to share with other users.
 
 h2. First steps
 
-Visit [[user.riseup.net => https://user.riseup.net]]. From there, you can change your password, add email aliases, set up email filters, change your quota, and request help.
+If you forget your password, the only way to regain access to your account is with a recovery code. There is no way around this, Riseup cannot help you if you lose your recovery code. You absolutely must save this code somewhere safe.
 
-We automatically destroy the information you gave us as part of your account request. You should consider removing any identifying information from your account settings, such as your name, birthday, secret question, and alternate email. However, if you forget your password and this information is not set (or you've forgotten what you stored, or the alternate email is no longer accessible), then you will lose access to your account.
+The future of your email is in your hands, and your hands only.
+
+If you haven’t already, please put your recovery code somewhere safe now. If you did not write it down when you created your account, visit [[your account settings->https://account.riseup.net/passwords?view=recovery]] to create a new one, and then write it down.
+
+There is only one recovery code at a time. When you create a new one, it replaces the old one.
+
+Visit https://account.riseup.net to change your password, replace your recovery code, add email aliases, set up email filters, change your quota, destroy your data, setup service-specific passwords, and request help.
 
 h2. Important things to know
 
 h3. Protect your password
 
-The Internet is crawling with people trying to steal your email account. At some point, you will probably receive a fraudulent email from someone pretending to be riseup.net. These emails will claim that you must perform some action in order to keep your account.
+The Internet is crawling with people trying to steal your email account. At some point, you will probably receive a fraudulent email from someone pretending to be Riseup. These emails will claim that you must perform some action in order to keep your account.
 
 * Never give your password to anyone, especially someone claiming to be riseup.net.
 * Never trust that the "From" address of an email is from who it says, because this can be forged easily.
@@ -31,38 +37,73 @@ Messages in some [[special folders => email-folders]] are automatically deleted 
 
 * *Trash* deleted after 21 days.
 * *Spam* deleted after 7 days.
-* *Sent* deleted after 120 days.
 
 h3. Quota
 
-For many reasons, we do not provide much storage space for email. If you need more space, consider downloading your email using a mail client or increasing your quota by visiting https://user.riseup.net. Read more about [[quota]].
+For different reasons we can only provide 1 GB of storage space for e-mail. If you need more space, consider downloading your email using a mail client. We encourage you to enable the encrypted storage for your account if your account is not currently using it (but be sure to save the recovery code!). Read more about [[quota]].
 
-h3. Use an email client
+h3. How to access your mail
 
-Although the riseup.net web-based interface does not have many features, you can use your riseup.net email account with an IMAP or POP email client, a feature-rich application designed specifically to handle your email. Check out our [[tutorials for many popular email clients => email/clients]].
+You can access your email by visiting https://mail.riseup.net.
 
-Riseup recommends [[thunderbird]], a free and open source mail client. Thunderbird will automatically configure itself correctly if you just give it your riseup.net email address and password.
+As an alternative, we recommend you download and install a dedicate [[email client => email/clients]] application. Check out our [[tutorials for many popular email clients => email/clients]].
 
-h2. What is special about riseup.net email
+Riseup recommends [[thunderbird]], a free and open source mail client. Thunderbird will automatically configure itself correctly if you just give it your Riseup email address and password.
 
-Your riseup.net email account is a wonderful thing. Although we don't provide as much storage quota as surveillance-funded corporate email providers, riseup.net email has many unusual features:
+h2. What is special about Riseup email
 
-[*We encrypt traffic whenever possible.*]
-When you send email from riseup.net to another secure email provider, the email is encrypted for its entire journey. (see [[StartTLS]] for more info)
+Your Riseup email account is a wonderful thing! Although we don't provide as much storage quota as surveillance-funded corporate email providers, Riseup email has many unusual features:
 
-[*We don't disclose your location to email recipients.*]
-When you send email with riseup.net, your internet address (IP address) is not embedded in the email. With corporate email providers, anyone who receives your email can figure out your approximate physical location from the internet address included in the email.
+[*Full disk encryption*]
+Our physical servers are protected in ways that do not allow anyone other than Riseup to access them. They are not hosted "in the cloud". As an additional measure, all of our servers use full disk encryption that can only be unlocked by Riseup. Additionally, all communications between our servers is also always encrypted. These measures protect against unauthorized physical access, theft and attempts to investigate the data on the storage medium.
 
-[*We don't log your internet address.*]
-Our commitment is to keep as little data on you as we can. Unlike corporate providers, we do not log internet addresses of anyone using riseup.net services, including email.
+[*Personally encrypted email storage*]
+Your e-mails are encrypted individually on our servers, and can only be unlocked and read using your password. This means that Riseup does not have the ability to read your stored emails. Encryption of incoming email is automatic, and only when you login does the mail become decrypted so it can be read. This takes place on the server, which then becomes temporarily trusted while you are authenticated. Because of this feature, your password is *critical* to your data. If you lose your password, and recovery code, you will not be able to access your account, nor will anyone be able to decrypt your emails. For technical details, see the [[TREES project => https://0xacab.org/riseuplabs/trees]].
+
+[*Your user ID is always hidden*]
+When you send an email with Riseup, your user ID is kept secret. In most cases, this is not a big deal, because the "From" address in the email will identify you. However, if you are using a temporary alias address, this protection will keep anyone from being able to identify what account the email originated from. In order to prevent this feature from being abused by spammers, Riseup temporarily retains the ability to decrypt the user ID header in your outgoing email.
+
+[*All services have Tor Onion Services*]
+We provide [[Tor Onion Services -> https://www.torproject.org/docs/tor-onion-service.html.en]] (Hidden Services) in case you need to increase your anonymity or circumvent possible blocks to our services.
+
+[*We encrypt traffic whenever possible*]
+When you send email from Riseup to another secure email provider, the email is encrypted for its entire journey. (see [[StartTLS]] for more info). This encryption happens automatically for data delivery between servers, and protects you against people listening in on the network. If you write an email to another Riseup user, your email will not leave our systems and will stay encrypted using the methods above.
+
+[*Delivery to other providers over Tor*]
+If you send an email to [[another activist email provider=>https://github.com/ehloonion/onionmx/blob/master/sources/map.yml]], it will be delivered over Tor Onion Services. This type of relay of email messages protects against traffic correlation and metadata analysis that is possible under normal email delivery. Metadata of who is communicating with whom can be extremely sensitive. In the words of former CIA directory Michael Hayden, "we kill people based on metadata". We are working to increase participation in this Tor-based email delivery network, and the above list will only increase as time goes on.
+
+[*We don't disclose your location to email recipients*]
+When you send email with Riseup, your internet address (IP address) is not embedded in the email. With most corporate email providers, anyone who receives your email can figure out your approximate physical location from the internet address included in the email.
+
+[*We don't log your internet address*]
+Our commitment is to keep as little data on you as we can. Unlike corporate providers, we do not log internet addresses of anyone using Riseup services, including email.
+
+h2. Other nice features from your Riseup account
+
+* We do not require you to sign up with a phone number or personal information. Instead, we rely on invite codes.
+* You can use separate passwords for each service (e.g. VPN, chat, email).
+* We are ad-free to keep your mind free and your data out of the hands of surveillance capitalism.
+* [[The account management system=>https://account.riseup.net]] does not use any javascript, and has strong content security policies set.
+* Our passwords are stored with strong, memory-hard digest algorithms (argon2).
+* You can purge your data with a click of a button in your [[account management system=>https://account.riseup.net]].
+* We provide POP which allows you to download your email and delete it from our servers.
+
+h2. What you do not get from Riseup
+
+* Unless you use the Mailvelope browser plugin, or your own OpenPGP solution, our e-mail system is *not* end-to-end encrypted or client-encrypted. We are working on a comprehensive solution to this problem and hope to have it available soon.
+* If somebody gains access to your password, they will be able to read all your e-mails. Never, ever, give anyone your password. If Riseup asks you for your password, it is a trick.
+* Never open any attachment that you receive from someone, unless you know they were going to send it to you. Attachments can compromise your computer, and your account!
+* Riseup does not have backups of all old messages. It is your responsibility to ensure that your data is safe!
+* Nothing online is 100% secure. If you have something very sensitive to say, do it offline.
+* There is no way to provide a magical technical solution that will solve everyone's problems in all the different possible contexts and struggles. Never forget that it is a mistake to try and solve social problems with technical solutions.
 
 h2. Mutual aid
 
-There is no such thing as free email. Services like gmail, hotmail, and yahoo make their money from surveillance: they build a profile on your behavior and your desires and then bombard you with advertising specifically targeted to you.
+There is no such thing as free email. Services like Gmail, Hotmail, and Yahoo make their money from surveillance: they build a profile on your behavior and your desires and then bombard you with advertising specifically targeted to you.
 
-Riseup.net is different. This service is a labor of love by activists like you committed to building movement-run and secure alternative infrastructure.
+Riseup is different. This service is a labor of love by activists like you committed to building movement-run and secure alternative infrastructure.
 
-The riseup.net email service takes a lot of time and money to keep running, and is funded entirely by small donations from its users. Please do your part and [[contribute today => donate]].
+The Riseup email service takes a lot of time and money to keep running, and is funded entirely by small donations from its users. Please do your part and [[contribute today => donate]].
 
 h2. Frequently asked questions (FAQ)
 

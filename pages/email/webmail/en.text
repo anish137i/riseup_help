@@ -2,25 +2,24 @@
 
 h2. What is webmail?
 
-Webmail allows you to check your riseup.net email from any computer that has a web browser. We do not recommend this method, for several reasons:
+Webmail allows you to check your riseup.net email from any computer that has a web browser.
 
-# Webmail is less secure than using a mail client.
-# The Webmail software that Riseup currently offers has few features and is very slow.
+To use Riseup webmail, visit https://mail.riseup.net
 
-The primary reason to use webmail is if you do not have your own device that you can install a mail client on. Sometimes people use webmail because they don't want to leave a record of what email account they use on the device. Webmail is not a good solution for this, because web browsers leave behind all sorts of temporary files, and session files can be recovered with the right tools.
+The primary reason to use webmail is if you do not have your own device that you can install a [[mail client => email/client]] on. Sometimes people use webmail because they don't want to leave a record of what email account they use on the device. Webmail is not a good solution for this, because web browsers leave behind all sorts of temporary files, and session files can be recovered with the right tools.
 
 h2. Webmail options
 
 Currently, Riseup offers two options for webmail:
 
-# *Roundcube*: roundcube presents a fluid and responsive user interface, but requires javascript and may not work for some people. 
+# *Roundcube*: roundcube presents a fluid and responsive user interface, but requires javascript and may not work for some people.
 # *SquirrelMail*: squirrelmail is more simple and does not require javascript.
 
 h2. Cookies must be enabled
 
 For security reasons, we require cookies. Without cookies, it is impossible to make your login session secure.
 
-Unfortunately, cookies also allow advertisers and companies like google to track you nearly all your activity on the web. If you are concerned about tracking, we suggest that you simply disable third party cookies. Alternately, you can block all cookies by default and then enable cookies for the sites you want.
+Unfortunately, cookies also allow advertisers and companies like google to track you nearly all your activity on the web. If you are concerned about tracking, we suggest that you simply disable third party cookies, see [[better-web-browsing]]. Alternately, you can block all cookies by default and then enable cookies for the sites you want.
 
 h2.  Troubleshooting webmail login
 
@@ -50,12 +49,16 @@ If you still cannot login, you should next figure out if the problem is with you
 * Try other computers and other web browsers. For this test to be helpful, the other computers and web browsers should be as different as possible. If you can, try to login from a different network, using a different browser, on a different operating system.
 * We suggest you download and install a recent version of Firefox or Chrome. If this works, then the problem is with your browser.
 
-h4.  Step 3: Check the server status
+h4. Step 3: Check the server status
 
 It is possible that the server is down. You can view the status of the mail server, and read any service notices, at this page:
 
-https://status.riseup.net
+https://help.riseup.net
 
-h4.  Step 4: Call for help!
+h4. Step 4: Call for help!
 
-If none of the above seem to work, then "fill out a help ticket":https://user.riseup.net/forms. But please, try these suggestions first! Also, include in your description of the problem a summary of the things you have already tried.
+If none of the above seem to work, then "fill out a help ticket":https://support.riseup.net/en/topics/new. But please, try these suggestions first! Also, include in your description of the problem a summary of the things you have already tried.
+
+h2. Access Webmail via Tor
+
+To enhance connection security you can use [[Tor]] to connect to Webmail via [[Riseup's .onion services -> tor#riseups-tor-hidden-services]]. Look for the according @mail.*.onion@ address on the linked page.

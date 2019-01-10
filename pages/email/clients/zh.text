@@ -10,9 +10,9 @@ h2.  邮件客户端是什么？
 
 table(table table-striped).
 |_.*平台*|_.*推荐的自由软件电子邮件客户端*|_.*其它商业客户端*|
-|Linux   | [[thunderbird]], [[evolution]], Kmail, Balsa, mutt, alpine, etc| |
-|Mac     | [[thunderbird]] | [[apple-mail]], [[postbox]] |
-|Windows | [[thunderbird]], [[evolution]]  | [[microsoft-outlook]], [[postbox]] |
+|Linux   | [[thunderbird]], [[evolution]], [[claws]], Kmail, Balsa, [[mutt]], alpine, [[sylpheed]] | |
+|Mac     | [[thunderbird]], [[sylpheed]] | [[apple-mail]] |
+|Windows | [[thunderbird]], [[evolution]], [[sylpheed]], [[claws]]  | [[microsoft-outlook]] |
 |Android | [[k9]] |  |
 |iOS     |  |  [[ios-mail]] |
 
@@ -44,7 +44,7 @@ h2.基本的客户端配置
 
 h2.  使用thunderbird
 
-!>clients/reclaimyourinbox.png!:http://getthunderbird.com
+p(pull-right). !(image-right)clients/reclaimyourinbox.png!:http://getthunderbird.com
 
 thunderbird是 riseup.net推荐使用的电子邮件客户端。可悲的是，在“Mozilla基金会”：https://mozilla.org基本上已经放弃了雷鸟，但它仍然是自由软件、跨平台的邮件客户端的最佳选择。
 

@@ -1,0 +1,38 @@
+red_title: "Riseup Red"
+red_info: "Forniamo account <b>Riseup Red</b> per i servizi tradizionali, inclusi [[email]] (IMAP), [[chat]] (XMPP) e [[vpn]]."
+red_webmail: "[[Accedi alla webmail => https://mail.riseup.net]]"
+red_support: "Aiuto su [[email]], [[chat]] e [[vpn]]."
+red_settings: "[[Cambia le impostazioni => https://account.riseup.net]]"
+red_request: "[[Richiedi un account => https://account.riseup.net/user/new]]"
+red_reset_password: "[[Resetta la password => https://account.riseup.net/reset_password]]"
+red_help: "[[Crea una richesta di supporto per Riseup Red => https://support.riseup.net/en/topics/new]]"
+
+black_title: "Riseup Black"
+black_info: "Forniamo account <b>Riseup Black</b> per nuovi servizi che richiedono l'applicazione Bitmask. Attualmente include il servizio VPN, presto includerà anche l'email con cifratura end-to-end."
+black_vpn: "[[Aiuto sulla VPN => vpn]]"
+black_settings: "[[Modifica le impostazioni => https://black.riseup.net]]"
+black_download: "[[Scarica l'applicazione Bitmask => https://bitmask.net/install]]"
+black_help: "[[Crea una richesta di supporto per Riseup Black => https://support.riseup.net]]"
+
+other_title: "Altri servizi"
+other_info: "I servizi seguenti usano account indipendenti che non sono associati agli account Riseup Red o Riseup Black."
+
+lists_title: "Mailing List"
+lists_info: "Mettiamo a disposizione mailing list per le organizzazioni di attivisti."
+lists_login: "[[Accedi alle mailing list => https://lists.riseup.net/www/]]"
+lists_help: "[[Aiuto sulle mailing list => lists]]"
+lists_request: "[[Richiedi una mailing list => creating-lists]]"
+lists_subscribe: "[[Iscriviti => subscribing]]"
+lists_unsubscribe: "[[Cancellati => subscribing]]"
+
+collab_title: "Strumenti per la collaborazione"
+we_info: "wiki privati e collaborazione di gruppo."
+pad_info: "editor di testo collaborativo in tempo reale."
+share_info: "upload di file (pastebin e imagebin)."
+
+resources_title: Resources
+security_info: "Risorse e guide per una comunicazione più sicura."
+help_link: "[[Help Desk di Riseup => https://support.riseup.net/en/topics/new]]"
+help_info: "Per contattarci ed inviarci una domanda, usa il modulo dell'help desk per creare un ticket, ma prima per favore cerca nella documentazione online che trovi su questo sito."
+servers_info: "Una directory di dozzine di server radicali in giro per il mondo."
+

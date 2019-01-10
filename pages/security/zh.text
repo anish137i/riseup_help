@@ -1,5 +1,15 @@
-@title = 'Communications Security'
-@nav_title = 'Security'
+@title = '通讯安全'
+@nav_title = '安全'
+
+h1. Start here
+
+Pressed for time? Too busy resisting oppression or building a better world? Great! We suggest you start your security journey with these easy steps that everyone can take to make their digital life a lot less vulnerable.
+
+# [[Embrace message hygiene => message-hygiene]]: The vast majority of attacks arrive in your inbox. Learn how to practice appropriate caution when using email and messaging applications.
+# [[Use a password manager => passwords]]: By using a password manager, you can eliminate a huge class of possible attacks.
+# [[Enable device encryption => device-encryption]]: Device encryption is easy to turn on and built into your operating system.
+# [[Become a better browser => better-web-browsing]]: By changing your default web browser settings and installing a few extensions, you can dramatically improve the security (and pleasantness) of your web browsing experience.
+# [[Run software safely => software-safety]]: Keeping your software up to date is a simple thing to do, but also very important for your security.
 
 h1. 为什么安全性很重要
 
@@ -23,7 +33,7 @@ h1. 安全性概述
 
 <table class="table table-striped">
 <tr>
-  <th style="width: 10em">Type of security</th>
+  <th class="col-md-2">Type of security</th>
   <th>What is it?</th>
   <th>When is it useful?</th>
 </tr>
@@ -49,7 +59,7 @@ h1. 安全性概述
 </tr>
 </table>
 
-Riseup通常提供服务来处理 [[network-security]]：
+Riseup通常提供服务来处理 [[网络安全 => network-security]]：
 
 *由于网络监控非常普遍，它是个影响每个人的所有时间的*社会问题*。相比之下，被当局镇压作为单独目标的人，设备和信息安全性非常重要。
 *与设备或消息的安全性相比，提高您的网络安全性是相当*容易地*。

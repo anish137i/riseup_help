@@ -1,0 +1,6 @@
+@title = "Errar é humano"
+
+Grande parte deste guia sobre segurança é dedicada à criptografia, mas, no final das contas, criptografar é inútil quando não são tomados cuidados que, apesar de básicos, são indispensáveis.
+
+<%= child_summaries heading: 1, include_toc: true %>
+

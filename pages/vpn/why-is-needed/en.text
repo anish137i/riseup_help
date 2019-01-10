@@ -1,7 +1,7 @@
-@nav_title = "Why is RiseupVPN needed"
-@title = 'Why is RiseupVPN needed?'
+@nav_title = "Why VPN is needed"
+@title = 'Why is VPN needed?'
 
-h2. Why would you want to use the RiseupVPN?
+h2. Why would you want to use the Riseup VPN?
 
 At Riseup, we believe it is important for everyone to use some technology like VPN or [[security/tor]] to encrypt their internet traffic. Why? Because the internet is being broken by governments, internet service providers (ISPs), and corporations.
 
@@ -17,26 +17,19 @@ h3. Broken by corporations
 
 Corporations have discovered how to make money from the internet: surveillance. By tracking your online habits, advertising companies build detailed profiles of your individual behavior in order to better sell you useless crap. Every single major internet ad company now uses behavioral tracking. Also, to comply with national copyright, many companies only make their services available to some internet users, those who reside in the 'right' country.
 
-h2. The solution: fix the internet by using RiseupVPN
+h2. The solution: fix the internet by using Riseup VPN
 
-There are many ways that RiseupVPN can help:
+There are many ways that Riseup VPN can help:
 
-# *protect against ISP surveillance*: RiseupVPN eliminates the ability of your ISP to monitor your communication. They have no meaningful records which can be used against you, either by marketers or the state.
+# *protect against ISP surveillance*: Riseup VPN eliminates the ability of your ISP to monitor your communication. They have no meaningful records which can be used against you, either by marketers or the state.
+# *protect against corporate surveillance*: Most commercial websites use multiple ad networks and traffic analysis services that track your behavior as you browse the web. These companies build detailed profiles of your behavior. The Riseup VPN blocks most of these tracking companies (however, we don't block Facebook).
+# *bypass government censorship*: Riseup VPN can entirely bypass all government censorship, so long as you still have access to the internet. Note, however, that careful analysis of your traffic could reveal that you are using a VPN, which may or may not be legal in your jurisdiction.
+# *actually be on the internet*: Rather than share a single public IP with many devices, Riseup VPN allows each device to have its own public internet address (even if it is behind a firewall). This allows many applications to work much more effectively.
+# *use peer-to-peer technology*: p2p technology has many important and decentralized uses, such as secure backups, guaranteeing public access to information, internet chat, affordable content delivery, etc. Despite this, some ISPs hinder p2p traffic. At some universities, simply using p2p is enough to get your internet cut off. The Riseup VPN bypasses these restrictions and, because you get your own IP, makes p2p applications work much better.
+# *access the entire internet, regardless of where you live*: Riseup VPN allows you to pretend to live in any country where we have a VPN server. This gives you access to restricted content only available in those countries. Riseup VPN also allows you to use services that may be blocked in your country, like Skype.
+# *break free from a corporate firewall*: So you work for an evil corporation and you try to waste as much time as possible surfing the web? Unfortunately, the corporate firewall probably prevents you from visiting many websites (riseup.net is on the list of banned sites for [[many corporate firewalls -> http://www.barracudanetworks.com/]]). Riseup VPN will let you entirely bypass these restrictions and gives you access to the whole web.
+# *secure your Wi-Fi connection*: Any time you use a public Wi-Fi connection, everyone else using that access point can spy on your traffic. Riseup VPN will prevent this.
 
-# *bypass government censorship*: RiseupVPN can entirely bypass all government censorship, so long as you still have access to the internet. Note, however, that careful analysis of your traffic could reveal that you are using a VPN, which may or may not be legal in your jurisdiction.
+[[how-vpn-works]]
 
-# *access the entire internet, regardless of where you live*: RiseupVPN allows you to pretend to live in any country where we have a VPN gateway server. This gives you access to restricted content only available in those countries. RiseupVPN also allows you to use services that may be blocked in your country.
-
-# *break free from a corporate firewall*: So you work for an evil corporation and you try to waste as much time as possible surfing the web? Unfortunately, the corporate firewall probably prevents you from visiting many websites (riseup.net is on the list of banned sites for [[many corporate firewalls -> https://www.barracudanetworks.com/]]). RiseupVPN will let you entirely bypass these restrictions and gives you access to the whole web.
-
-# *secure your Wi-Fi connection*: Any time you use a public Wi-Fi connection, everyone else using that access point can spy on your traffic. RiseupVPN will prevent this.
-
-h2. Limitations to using RiseupVPN
-
-The RiseupVPN shares some limitations common to all personal VPNs:
-
-* *An insecure connection is still insecure*: Although RiseupVPN will anonymize your location and protect you from surveillance from your ISP, once your data is securely routed through riseup.net it will go out on the internet as it normally would. This means you should still use TLS when available (ie. https, imaps, etc).
-
-* *RiseupVPN is not a panacea*: although VPNs accomplish a lot, they can't fix everything. For example, it cannot increase your security if your computer is already compromised with viruses or spyware. If you give personal information to a website, there is little that a VPN can do to maintain your anonymity with that website or its partners. For more information, see [[VPN anonymity -> security-issues]].
-
-* *The internet might get slower*: the RiseupVPN routes all your traffic through an encrypted connection to riseup.net before it goes out onto the normal internet. This extra step can slow things down. To minimize the slowdown, try to choose a VPN gateway server close to where you actually live.
+<%= render :partial => 'vpn-limitations' %>

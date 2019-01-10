@@ -2,9 +2,37 @@
 @nav_title = 'Donare'
 @this.alias = '/donare'
 
+h1. Donazioni tramite posta
+
+Fai assegni o vaglia pagabili a "Riseup Networks" e spediscili al seguente indirizzo:
+
+p(donation). Riseup Networks
+PO Box 4282
+Seattle, WA 98194 USA
+
+Purtroppo, non abbiamo la manodopera per inviarti una lettera di ringraziamento quando riceviamo la tua donazione. Per favore, sappi che ti siamo incredibilmente grati: il tuo supporto è la nostra linfa vitale e rende tutto il nostro duro lavoro possibile. Noi ti vogliamo bene per il fatto che metti i tuoi soldi lì dove sono i tuoi valori! <b>Eccezione:</b> Siamo obbligati per legge a rendicontare annualmente l'identità di ogni donatore che ci da più di 5.000 USD.
+
+h1. Donazioni online
+
+<%= render :partial => 'inc/online_forms' %>
+
+h1. Donare criptovaluta
+
+<%= render :partial => 'inc/cryptocurrency_forms' %>
+
+h1. Wire/Bank trasferimenti (EUR solo)
+
+Possiamo accettare bonifici bancari *solo in euro (EUR), non le altre valute* Si prega di inviare a.:
+
+p(donation). *Recipient Name:* Riseup Networks
+*IBAN:* DE41 4306 0967 1126 8256 06
+*BIC:* GENODEM1GLS
+*Banca:* GLS Bank
+*Nazione:* Germania
+
 h1. Supporta le alternative radicali!
 
-!>donate/img/red-leap-medium.jpg!
+p(pull-right). !(image-right)donate/img/red-leap-medium.jpg!
 
 Riseup lavora instancabilmente nel creare tecnologie alternative di base che indirizzino le necessità relative alle comunicazioni delle persone e delle organizzazioni che lavorano per il cambiamento sociale. Quando usi un servizio da un'azienda che non ti fa pagare nulla,  è probabile che i soldi provengano dalla sorveglianza e dalla vendita dei tuoi dati. Riseup, d'altra parte, fa affidamento sulle donazioni degli utenti come te che credono nel supporto delle alternative democratiche.
 
@@ -24,20 +52,6 @@ Se hai una mailing list grande con più di cento iscritti o che generi molto tra
 Per favore, se te lo puoi permettere, prendi in considerazione di donare di più. I soldi avanzati dopo aver coperto le nostre spese di base, vengono reinvestiti nel fornire servizi a più utenti. Se stai facendo una grande donazione (grazie!), per favore considera la possibilità di inviarci un assegno o un vaglia tramite posta--i sistemi di pagamento online trattengono circa di 3% di commissioni.
 
 Tutte le decisioni finanziarie del <b>Collettivo Riseup</b> sono prese dai membri del collettivo usando il metodo del consenso.
-
-h1. Donazioni tramite posta
-
-Fai assegni o vaglia pagabili a "Riseup Networks" e spediscili al seguente indirizzo:
-
-p(donation). Riseup Networks
-PO Box 4282
-Seattle, WA 98194 USA
-
-Purtroppo, non abbiamo la manodopera per inviarti una lettera di ringraziamento quando riceviamo la tua donazione. Per favore, sappi che ti siamo incredibilmente grati: il tuo supporto è la nostra linfa vitale e rende tutto il nostro duro lavoro possibile. Noi ti vogliamo bene per il fatto che metti i tuoi soldi lì dove sono i tuoi valori! <b>Eccezione:</b> Siamo obbligati per legge a rendicontare annualmente l'identità di ogni donatore che ci da più di 5.000 USD.
-
-h1. Donazioni online
-
-<%= render :partial => 'inc/donate_forms' %>
 
 h1. Domande Frequenti
 

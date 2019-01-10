@@ -6,7 +6,7 @@ Si eres un programador y quieres ayudar a Riseup, por favor ve la página [[prog
 
 h2. Infraestructura alternativa para email seguro
 
-Hay un problema con el email. El gobierno de EE.UU realiza monitoreo "full pipe" y de mapeo de asociamiento, lo cual le da la habilidad de construir un mapa detallado de cómo nuestros movimientos sociales están organizados. Para mayor información sobre privacidad de email puedes ver nuestro "manual de seguridad para activistas.":https://zine.riseup.net
+Hay un problema con el email. El gobierno de EE.UU realiza monitoreo "full pipe" y de mapeo de asociamiento, lo cual le da la habilidad de construir un mapa detallado de cómo nuestros movimientos sociales están organizados. Para mayor información sobre privacidad de email puedes ver nuestro "manual de seguridad para activistas.":https://web.archive.org/web/20160306044630/https://zine.riseup.net/
 
 Creemos que es vital que la infraestructura esencial de comunicaciones sea controlada por organizaciones sociales y no por corporaciones o el gobierno. Por esta razón, proveemos servicio de email con un nivel único de seguridad y privacidad. A diferencia de casi todos los proveedores de email, nuestros logs (registros) y cabeceras de email no contienen información personal identificable. Además, todo el correo es almacenado en particiones encriptadas y transmitidos sobre conexiones seguras siempre que sea posible.
 
@@ -22,7 +22,7 @@ Con el objetivo de ayudar a otros colectivos tecnológicos a establecerse, prove
 
 h2. Proyecto de Co-locación de la Comunidad Seattle
 
-Riseup provee co-locación asequible, segura, y confiable de acuerdo a ingresos y basado en necesidad. Hospedamos alrededor de 30 servidores, incluyendo servidores de organizaciones de movimientos de justicia social en EE.UU, el Reino Unido, Alemania, Francia, Italia, México, Brasil, y Canadá. Visita http://seaccp.org para mayor información.
+Riseup provee co-locación asequible, segura, y confiable de acuerdo a ingresos y basado en necesidad. Hospedamos alrededor de 30 servidores, incluyendo servidores de organizaciones de movimientos de justicia social en EE.UU, el Reino Unido, Alemania, Francia, Italia, México, Brasil, y Canadá.
 
 h2. Apoyando TOR
 
@@ -43,7 +43,7 @@ Nuestras contribuciones al Software Libre incluyen:
 * *Parches de seguridad y privacidad*: Desarrollamos y distribuimos versiones propias de sistemas de logging, transporte de correo, webmail, y herramientas de hospedaje web populares, las cuales permiten a los administradores de sistemas escoger exactamente que información desean retener. Esto asegura la privacidad de los usuarios y protege en caso de caídas de sistema, las jaquecas, y los costos legales asociados a los intentos del gobierno de incautar archivos de log (registro). Para mayor información visita https://labs.riseup.net/code/projects/privacy
 * *"Crabgrass":https://crabgrass.riseuplabs.org*: Crabgrass es una aplicación web de código abierto diseñada para interacciones sociales, colaboración grupal y organización virtual. Nuestro objetivo es crear herramientas de comunicación que se adapten específicamente para cumplir las necesidades de organización basal.
 * *"backupninja":https://labs.riseup.net/code/projects/show/backupninja*: Backupninja es un conjunto popular de herramientas que provee una manera centralizada de configurar y agendar variadas utilidades de respaldo (backup).
-* *"monkeysphere":http://web.monkeysphere.info*: Monkeysphere te permite usar la red de confianza (web of trust) de OpenPGP para verificar conexiones ssh. La autentificación SSH basada en llaves está más que probada, pero le falta una verdadera infraestructura de llave pública para la certificación, revocación y expiración de llaves. Monkeysphere es un entorno que usa la red de confianza (web of trust) de OpenPGP para estas funciones PKI.
+* *"monkeysphere":http://web.monkeysphere.info*: Monkeysphere te permite usar la red de confianza (web of trust) de OpenPGP para verificar conexiones ssh. La autentificación SSH basada en llaves está más que probada, pero le falta una verdadera infraestructura de llave pública para la certificación, revocación y expiración de llaves. Monkeysphere es un entorno que usa la red de confianza (web of trust) de OpenPGP para estas funciones "PKI":https://es.wikipedia.org/wiki/Infraestructura_de_clave_p%C3%BAblica.
 * *"puppet":https://labs.riseup.net/code/projects/puppetmodules*: es usado para mantener prácticamente todos nuestros sistemas y servicios. Escribimos un montón de módulos puppet que están escritos de manera genérica, de manera que puedan ser compartidos con otras personas. También somos parte de un "grupo":https://labs.riseup.net/code/projects/sharedpuppetmodules creado para compartir módulos puppet.
 * *debian grimoire*: Todo lo que Riseup ha hecho alguna vez está escrito en tutoriales paso a paso y publicados en nuestro sitio web, con el objetivo de ayudar a otras organizaciones a luchar con tecnologías de código abierto complejas, especialmente en movimientos de base y acción directa. Visita https://we.riseup.net/debian para mayor información.
 * *Debian GNU/Linux*: Varios miembros del colectivo Riseup son desarrolladores activos de Debian (la única distribución grande creada sin fines de lucro). Mucha gente es familiar con Ubuntu, que está basado en Debian. Visita https://www.debian.org

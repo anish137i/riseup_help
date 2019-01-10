@@ -1,26 +1,53 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-As of October 1, 2014, riseup has not received any National Security Letters or FISA court orders, and we have not been subject to any gag order by a FISA court, or any other similar court of any government. Riseup has never placed any backdoors in our hardware or software and has not received any requests to do so. Riseup has never disclosed any user communications to any third party.
 
-Regarding server seizures, in a widely-reported incident [1], the FBI seized one of riseup's servers in April 2012. This incident happened in New York. The machine was encrypted and contained no user data. The server was returned, but it was not placed back in service. Other than this incident, as of October 1, 2014 riseup confirms that it has never had any hardware seized or taken by any third party.
+Riseup positively confirms that the integrity of our system is sound: all our infrastructure is in our control, we have not been compromised or suffered a data breach, we have not disclosed any private encryption keys, and we have not been forced to modify our system to allow access or information leakage to a third party.
 
-Riseup intends to update this report approximately once per quarter.
+This canary will be re-signed on the following dates:
 
-[1] www.eff.org/deeplinks/2012/04/may-firstriseup-server-seizure-fbi-overreaches-yet-again
+* February 1
+* May 1
+* August 1
+* November 1
+
+We will include a link to a recent news article[1] in each update to establish that the signature was not pre-generated. 
+ 
+h2. Frequently asked questions
+
+Q: Are you compromised by law enforcement?
+
+A: No. We have never permitted installation of any hardware or software monitoring on any system that we control; law enforcement has not taken our servers; does not, and has never had access to them. We would rather stop being Riseup before we did that.
+
+Q: Couldn't the government just make you say that?
+
+A: Forced speech is actually quite rare in the US legal context. It's usually only in cases of consumer protection where the government has been successful in compelling speech (e.g. forced cigarette warnings). Nevertheless, no they aren't forcing us to say anything.
+
+Q: Why didn't you update your canary on time in the winter of 2016?
+
+A: The canary was so broad that any attempt to issue a new one would be a violation of a gag order related to an investigation into a DDoS extortion ring and ransomware operation[0]. This is not desirable, because if any one of a number of minor things happen, it signals to users that a major thing has happened.
+
+Q: Why does the new Canary not mention gag orders, FISA court orders, National Security Letters, etc?
+
+A: Our initial Canary strategy was only harming users by freaking them out unnecessarily when minor events happened. A Canary is supposed to signal important risk information to users, but there is also danger in signaling the wrong thing to users or leading to general fear and confusion for no good reason. The current Canary is limited to significant events that could compromise the security of Riseup users.
+
+0. https://riseup.net/about-us/press/canary-statement
+1. https://theintercept.com/2018/10/30/donald-trump-anti-semitism-synagogue-shooting/
+
 -----BEGIN PGP SIGNATURE-----
 
-iQIcBAEBCgAGBQJUK27sAAoJEDBD4rcTmnaOcBcP/ilbw5weTZM9vdSWgizdGv9O
-H/Aw6BJmTsKM9dsfRGQECSG80sNh974v5OS+PdPH0yc7gZfztuBLfAcKzJw7hcrt
-c0gkEPsU5IdASbmp88CfjN+5UJXUNOx/kLvuGIV6cKNHrKNWYf1EqyLdPUOueb6B
-j7c46UFwRE+hWktrxkJfoAbZi5b7VUUXwwQzS77yuIoeckz8hMyPTmhJK0jRQm52
-ND/GJLD/qwtuluZ/1XJSpis2N9OmWFP4KzGoAqO4nDroYF0qpBGgFGArPViDFCfP
-N7G5eMTcwxS7ae2Hz1aQobl6QcaJcZIcpl0TQgTjMSmrPKv5kFwzF1I0oC63v9QU
-9q/T1seP7HucV1UvOjRl8TcBp9BikR32f5ao3Hf6R41F8cRdGBLjhhaLfz3p4LES
-rYmNvYadMhpATMGdK4FSW87VDFUGRnCdF51Ogr+b93dSLnhork+39A0+DqqtBsfh
-dIJ4XsF9eXyO9ViC55XZmZytvwFPUDpuawUN+/F5TTmTk+WRJGFlAUBFftW3bvW0
-BuCh1lsvSTH2+xKHA90xTNXIrTQcNQHggsdnxjk3LpxyZnkjBuGR8BAwZJdwLcXK
-otgIT8vJMp93z9fw5Nnk444/QRfqVutus1X6IZ7E/toc/lCXGkqMuLnQFYq7Gt7p
-UMp85/g58RL05NyFMmR8
-=ClPZ
+iQJKBAEBCgA0FiEETgeRJo98Z+q+iPGwMEPitxOado4FAlvZINAWHGNvbGxlY3Rp
+dmVAcmlzZXVwLm5ldAAKCRAwQ+K3E5p2jg29D/wNZCs/LKtcGduAruHCONwqYnNA
+qrSleFTSXBGw0EizoFHr6F28MpA1HrIzKFySveAln4u4HZmW7ZxVcRLw6pG8Q6rB
+0XoCXnLI8i5bOgWmYDYLt33QZQypRsNdw8ykgsttgzzvySdagY1B9gcDA3KqkJ8S
+Ib7UB/dHXC/Iu93xaRrOvuWVDiI904CHnBcRYLyHGiQOffHd7nUbRDNKV/lJzxd5
+wxIw4AYoQKVBKi9d9a/33FgxfXp3SFPaUJphsUwwMgSC9Doo5mCg2fp9EZfQj3TC
+f1clQ4P6ArFMaLb5KpXdM4/epgNHkSPWdVvGrZ9DV13EDavJgPXQaixoQ3Na6Po2
+Llz2WMfXwfLd9hh2OQ+a3pxm+BleY8evk4tlqwPzX+WLdDz0XODcIFh/4nmSxy5h
+0gca9iZ5JWu98dqZP/+s22T2uOv1esPPuLXEDNTHnmZrtO/gAuGlSOq4OT6hdmWx
+kIojioSy3JC4uc/dwlGIvL6K1ylJlR9teoXY83TgaNOyql4GrckSQEzld+eRFkPy
+ygDuiirZDSn7gVdYKxs/R2oevFE+PI11e4K9Pwpbk7F8C5s5YUTXZEi08tBAf4B1
+gOA6lWNTqKabsj3BYDvWsKtXBtJK3DOyQH2E2kkaej2t3c0mi9ZJm6fBMfQ0p2bz
+t/3q2Pa4/6ByR2Wh4Q==
+=8Osj
 -----END PGP SIGNATURE-----

@@ -1,0 +1,44 @@
+red_title: "Riseup Red"
+red_info: "Oferecemos contas <b>Riseup Red</b> para serviços tradicionais,
+  inclusive [[email]] (IMAP), [[chat]] (XMPP) e [[vpn]]."
+red_webmail: "[[Entre no webmail => https://mail.riseup.net]]."
+red_support: "Ajuda com [[email]], [[chat]] e [[vpn]]."
+red_settings: "[[Mude suas configurações => https://account.riseup.net]]."
+red_request: "[[Solicite uma conta => https://account.riseup.net/user/new]]."
+red_reset_password: "[[Recupere sua senha => https://account.riseup.net/reset_password]]."
+red_help: "[[Crie um tíquete de ajuda Riseup Red => https://support.riseup.net/en/topics/new]]."
+
+black_title: "Riseup Black"
+black_info: "Oferecemos contas <b>Riseup Black</b> para serviços novos, que
+  requerem o aplicativo Bitmask. Atualmente, isso inclui VPN, e, em breve, haverá
+  criptografia de ponta a ponta para e-mails."
+black_vpn: "[[Ajuda com VPN => vpn]]."
+black_settings: "[[Mude suas configurações => https://black.riseup.net]]."
+black_download: "[[Baixe o aplicativo Bitmask => https://bitmask.net/install]]."
+black_help: "[[Crie um tíquete de ajuda Riseup Black => https://support.riseup.net]]."
+
+other_title: "Outros serviços"
+other_info: "Cada um dos serviços a seguir requer uma conta independente,
+  desvinculada de Riseup Red e Riseup Black."
+
+lists_title: "Listas de discussão"
+lists_info: "Oferecemos listas de discussão para organizações ativistas."
+lists_login: "[[Entre no sistema de listas => https://lists.riseup.net/www/]]."
+lists_help: "[[Ajuda com listas => lists]]."
+lists_request: "[[Solicite uma lista => creating-lists]]."
+lists_subscribe: "[[Inscreva-se => subscribing]]."
+lists_unsubscribe: "[[Cancele sua inscrição => subscribing]]."
+
+collab_title: "Colaboração"
+we_info: "wikis privadas e colaboração em grupo."
+pad_info: "editor colaborativo de texto em tempo real."
+share_info: "upload de arquivos (pastebin e imagebin)."
+
+resources_title: Recursos
+security_info: "Recursos e tutoriais para uma comunicação mais segura."
+help_link: "[[Central de Atendimento Riseup => https://support.riseup.net/en/topics/new]]"
+help_info: "Para fazer uma pergunta, use o formulário da Central de Atendimento para
+  criar um tíquete de ajuda. Mas antes, por favor, pesquise e leia a documentação
+  on-line disponível neste site."
+servers_info: "Um diretório com dezenas de servidores radicais do mundo inteiro."
+

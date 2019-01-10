@@ -2,16 +2,18 @@
 
 h2. Über diese Anleitung
 
-Wir haben hier eine Menge Informationen zur Konfiguration von OpenPGP zusammengetragen. Zu jeder Konfigurationsempfehlung gibt es ausführliche Erläuterungen. Für viele dieser Empfehlungen sind Änderungen an der Konfigurationsdatei von gnupg auf Deinem Rechner erforderlich, die sich in @~/.gnupg/gpg.conf@ befindet. Der Einfachheit halber haben wir alle empfohlenen Änderungen an der Datei gpg.conf an einem Ort [[nahe dem Ende dieser Seite zusammengetragen ->/best-practices#zusammenfassung-aller-empfehlungen]]. Wir empfehlen Dir nachdrücklich die Datei nicht nur blind zu kopieren, sondern zuerst dieses Dokument durchzulesen um zu verstehen was die Einstellungen bewirken.
+Wir haben hier eine Menge Informationen zur Konfiguration von OpenPGP zusammengetragen. Zu jeder Konfigurationsempfehlung gibt es ausführliche Erläuterungen. Für viele dieser Empfehlungen sind Änderungen an der Konfigurationsdatei von gnupg auf Deinem Rechner erforderlich, die sich in @~/.gnupg/gpg.conf@ befindet. Der Einfachheit halber haben wir alle empfohlenen Änderungen an der Datei gpg.conf an einem Ort [[nahe dem Ende dieser Seite zusammengetragen ->/best-practices#zusammenfassung-aller-empfehlungen]]. Wir empfehlen Dir nachdrücklich, die Datei nicht nur blind zu kopieren, sondern zuerst dieses Dokument durchzulesen, um zu verstehen, was die Einstellungen bewirken.
+
+Diese Anleitung wurde für eine ältere Version von GnuPG (1.4) geschrieben, einige Empfehlungen können daher redundant mit aktuellen Standardeinstellungen von neueren Versionen von GnuPG (2.1 und darüber) sein. Eine Überarbeitung [[findet gerade statt -> https://github.com/riseupnet/riseup_help/issues/451]], um die Aktualität der Anleitung zu überprüfen. Du kannst dabei helfen [[durch Einsenden von Änderungsvorschlägen->https://github.com/riseupnet/riseup_help/edit/master/pages/security/message-security/openpgp/gpg-best-practices/en.text]].
 
 h2. Freie Software verwenden und auf dem neusten Stand halten
 
-Informationssicherheit is zu wichtig um sie kommerzieller Software zu überlassen. Du solltest eine freie OpenPGP-Implementierung verwenden und auf dem neuesten Stand halten. Die Standardlösung für freies OpenPGP ist [[GnuPG -> https://gnupg.org/]] und es ist für alle gängigen, modernen Betriebssyteme verfügbar. Es reicht aber nicht GnuPG einfach zu installieren und dann nie wieder darüber nachzudenken. Du *musst* die Software auch aktuell halten, damit kritische Sicherheitslücken behoben werden können. Jede Software hat Fehler und GnuPG ist keine Ausnahme. Je nach Betriebssystem gibt es dies zu beachten:
+Informationssicherheit is zu wichtig, um sie kommerzieller Software zu überlassen. Du solltest eine freie OpenPGP-Implementierung verwenden und auf dem neuesten Stand halten. Die Standardlösung für freies OpenPGP ist [[GnuPG -> https://gnupg.org/]] und es ist für alle gängigen, modernen Betriebssyteme verfügbar. Es reicht aber nicht GnuPG einfach zu installieren und dann nie wieder darüber nachzudenken. Du *musst* die Software auch aktuell halten, damit kritische Sicherheitslücken behoben werden können. Jede Software hat Fehler und GnuPG ist keine Ausnahme. Je nach Betriebssystem gibt es dies zu beachten:
 
-- GNU/Linux (Debian, Ubuntu, Mint, Fedora, usw.) := Dein Betriebssystem installiert GnuPG automatisch und hält es auch auf dem neuesten Stand.
-- Windows := Du kannst [[Gpg4win -> https://gpg4win.org/index-de.html]] installieren und die [[gpg4win-announce Mailingliste -> http://lists.wald.intevation.org/mailman/listinfo/gpg4win-announce]] (auf Englisch) abonnieren um herauszufinden wann es Zeit ist ein Update zu installieren.
-- Mac OS := Du kannst die [[GPG Suite von GPGTools -> https://gpgtools.org/]] installieren.
-- Wenn Du den Quellcode selbst übersetzt (z.B. für andere Betriebssysteme) := Du solltest die [[gnupg-announce Mailingliste -> http://lists.gnupg.org/mailman/listinfo/gnupg-announce]] abonnieren um herauszufinden wann es Zeit ist ein Update zu installieren.
+* *GNU/Linux* (Debian, Ubuntu, Mint, Fedora, usw.): Dein Betriebssystem installiert GnuPG automatisch und hält es auch auf dem neuesten Stand.
+* Windows: Du kannst "Gpg4win":https://gpg4win.org/index-de.html installieren und die "gpg4win-announce Mailingliste":http://lists.wald.intevation.org/mailman/listinfo/gpg4win-announce (englisch) abonnieren, um herauszufinden wann es Zeit ist ein Update zu installieren.
+* *Mac OS*: Du kannst die "GPG Suite von GPGTools":https://gpgtools.org installieren.
+* Wenn Du den Quellcode selbst übersetzt (z.B. für andere Betriebssysteme), solltest du die "gnupg-announce Mailingliste":http://lists.gnupg.org/mailman/listinfo/gnupg-announce abonnieren, um herauszufinden wann es Zeit ist ein Update zu installieren.
 
 h2. Einen Schlüsselserver auswählen und den eigenen Rechner so konfigurieren, dass der Schlüsselbund aktualisiert wird.
 
@@ -38,6 +40,8 @@ p. Von jetzt an werden Deine Interaktionen mit dem Schlüsselserver über hkps v
 
 _Anmerkung:_ hkps://keys.indymedia.org, hkps://keys.mayfirst.org und hkps://keys.riseup.net bieten auch alle hkps (allerdings ist es ratsam, stattdessen einen Schlüsselserververbund zu verwenden).
 
+bq. Dies ist das Standardverhalten seit GnuPG 2.1.18.
+
 h3. Sicherstellen, dass alle Schlüssel über den Schlüsselserver aktualisiert werden, den Du angegeben hast
 
 Bei der Schlüsselerzeugung können die Besitzer*innen einen bestimmten Schlüsselserver angeben, von dem ihr Schlüssel zu beziehen ist. Es ist ratsam, die folgende Option in @~/.gnupg/gpg.conf@ einzutragen, um solche Zuordnungen zu ignorieren:
@@ -58,15 +62,32 @@ Du solltest *nicht* @gpg --refresh-keys@ oder den Aktualisierungsbefehl Deines M
 
 h3. Schlüsseln von Schlüsselservern nicht blind vertrauen
 
-Jede*r kann Schlüssel auf einen Schlüsselserver hochladen und es gibt keinen Grund anzunehmen, dass der Schlüssel, den Du herunterlädst, tatsächlich der Person gehört, die im Schlüssel angegeben wird. Deshalb solltest Du den vollständigen Fingerabdruck des Schlüssels mit der Eigentümer*in des Schlüssels verifizieren und zwar bei einem persönlichen Treffen oder am Telefon. Sobald Du den gesuchten Fingerabdruck mit der Eigentümer*in verifiziert hast, kannst Du den Schlüssel über den Fingerabdruck vom Schlüsselserververbund herunterladen:
+Jede*r kann Schlüssel auf einen Schlüsselserver hochladen und es gibt keinen Grund anzunehmen, dass der Schlüssel, den Du herunterlädst, tatsächlich der Person gehört, die im Schlüssel angegeben wird. Deshalb solltest Du den vollständigen Fingerabdruck des Schlüssels mit der Eigentümer*in des Schlüssels verifizieren und zwar bei einem persönlichen Treffen oder am Telefon.
 
-pre. gpg --recv-key '<fingerabdruck>'
+Sobald Du den gesuchten Fingerabdruck mit der Eigentümer*in verifiziert hast, kannst Du den Schlüssel über den Fingerabdruck vom Schlüsselserververbund herunterladen:
+
+bc. gpg --recv-key '<fingerprint>'
 
 Beachte die einfachen Anführungsstriche oben ('), welche vor und hinter dem vollständigen Fingerabdruck stehen sollten und notwendig sind, damit dieser Befehl funktioniert. Doppelte Anführungszeichen oben (") gehen auch.
 
+Der nächste Schritt ist, sicherzustellen, dass du tatsächlich den richtigen Schlüssel bekommen hast. Der Schlüsselserver könnte dir einen anderen geschickt haben, als den den du wolltest. Wenn Du gpg mit einer Version kleiner als 2.1 benutzt, musst du den Fingerabdruck manuell nach dem Herunterladen überprüfen (Version 2.1 und neuer lehnen Schlüssel vom Schlüsselserver mit falschem Fingerabdruck ab).
+
+Es gibt zwei Möglichkeiten, den Fingerabdruck zu überprüfen:
+
+Option 1. Überprüfe, dass der Fingerabdruck jetzt in deinem Schlüsselbund vorhanden ist:
+
+bc. gpg --fingerprint '<fingerprint>'
+
+Option 2. Versuche (lokal) einen Schlüssel mit diesem Fingerabdruck zu signieren:
+
+bc. gpg --lsign-key '<fingerprint>'
+
+Wenn du sicher bist, dass du den richtigen Fingerabdruck von der Person hast, welcher der Schlüssel gehört, ist die bevorzugte Methode, den Schlüssel lokal zu signieren.
+Wenn du öffentlich deine Beziehung zu dieser Person bewerben willst, kannst du auch das öffentlich exportierbare [@--sign-key@] verwenden.
+
 h3. Verlasse Dich nicht auf die Schlüssel-ID (keyid).
 
-Kurze OpenPGP Schlüssel-IDs, beispielsweise 0x2861A790, sind 32 bit lang. Es ist [[bekannt -> http://www.asheesh.org/note/debian/short-key-ids-are-bad-news]], dass es leicht ist einen neuen, gefälschten Schlüssel mit der selben Schlüssel-ID zu erstellen. Lange OpenPGP Schlüssel-IDs (wie z.B. 0xA1E6148633874A3D) sind 64 bit lang. [[ID-Kollisionen herbeizuführen ist trivial -> http://thread.gmane.org/gmane.ietf.openpgp/7413]], was ebenfalls [[ein potentiell ernsthaftes Problem darstellt -> https://www.debian-administration.org/users/dkg/weblog/105]].
+Kurze OpenPGP Schlüssel-IDs, beispielsweise 0x2861A790, sind 32 bit lang. Es ist [[bekannt -> http://www.asheesh.org/note/debian/short-key-ids-are-bad-news.html]], dass es leicht ist einen neuen, gefälschten Schlüssel mit der selben Schlüssel-ID zu erstellen. Lange OpenPGP Schlüssel-IDs (wie z.B. 0xA1E6148633874A3D) sind 64 bit lang. [[ID-Kollisionen herbeizuführen ist trivial -> http://thread.gmane.org/gmane.ietf.openpgp/7413]], was ebenfalls [[ein potentiell ernsthaftes Problem darstellt -> https://www.debian-administration.org/users/dkg/weblog/105]].
 
 Wenn Du wirklich eine kryptographisch starke Identifikation für einen Schlüssel haben willst, solltest Du den vollen Fingerabdruck verwenden. Du solltest Dich _nie_ auf die Schlüssel-ID verlassen, weder die kurze, noch die lange.
 
@@ -82,9 +103,9 @@ Nun da Du weisst, wie Du reguläre Schlüsselaktualisierungen von einem gut gewa
 
 h3. Verwende einen starken primären Schlüssel
 
-Viele Leute benutzen noch 1024-bit DSA-Schlüssel. Du solltest wirklich in betracht ziehen, zu einer höheren Bitstärke und einem besseren Hashing-Algorithmus zu wechseln. Es ist davon auszugehen, dass diese Schlüsselgröße von gut ausgestatteten und finanzierten Organisationen inzwischen durchaus geknackt werden kann. Außerdem zeigt der Hash-Algorithmus Alterserscheinungen.
+Manche Leute benutzen noch 1024-bit DSA-Schlüssel. Du solltest wirklich zu einer höheren Bitstärke und einem besseren Hashing-Algorithmus wechseln. 2011 hat die US-Regierungsinstitution NIST DSA-1024 für [[hinfällig erklärt => ttp://csrc.nist.gov/publications/nistpubs/800-131A/sp800-131A.pdf]], seit 2013 ist er sogar [[verboten -> http://csrc.nist.gov/publications/nistpubs/800-131A/sp800-131A.pdf]].
 
-Wir empfehlen, einen 4096-bit langen RSA-Schlüssel mit SHA-512 als Hash-Algorithmus zu erstellen, eine [[Erklärung zum Wechsel der Schlüssel (transition statement) -> https://we.riseup.net/assets/176898/key%20transition]] erstellen, die mit beiden Schlüsseln signiert ist und diese dann bekannt machen. Es gibt ein [[gutes Dokument http://ekaia.org/blog/2009/05/10/creating-new-gpgkey]] dass die notwendigen Schritte zum Erstellen eines solchen Schlüssels *genau* erklärt, so dass sichergestellt ist, dass Du den richtigen Hash-Algorithmus verwendest (wenn Du eine gnupg-Version vor 1.4.10 verwendest, kann der Vorgang etwas kompliziert sein).
+Wir empfehlen, einen 3072-bit langen RSA-Schlüssel mit sha512 als Hash-Algorithmus zu erstellen und eine [[Erklärung zum Wechsel der Schlüssel (transition statement) -> key-transition]] zu veröffentlichen, die mit beiden Schlüsseln signiert ist. [[Dieses Dokument -> http://ekaia.org/blog/2009/05/10/creating-new-gpgkey]] erklärt die notwendigen Schritte zum Erstellen eines solchen Schlüssels *genau und gut*, so dass sichergestellt ist, dass Du den richtigen Hash-Algorithmus verwendest (wenn Du eine GnuPG-Version vor 1.4.10 verwendest, kann der Vorgang etwas kompliziert sein).
 
 Das Wechseln des Schlüssels kann schmerzhaft sein, aber es lohnt sich - und ist außerdem eine gute Gelegenheit, den Umgang mit den Werkzeugen zu üben!
 
@@ -130,13 +151,71 @@ pre. gpg --output widerruf.asc --gen-revoke '<fingerabdruck>'
 
 Damit erstellst Du eine Datei namens widerruf.asc. Du könntest einen Ausdruck von diesem Zertifikat vornehmen und an einem sicheren Ort ablegen (gib ihn Deiner Mutter oder bewahre ihn bei Deinen Backups an einem anderen Ort auf). Wenn jemand Zugang dazu erhält, kann sie Deinen Schlüssel widerrufen, was sehr lästig ist; wenn sie allerdings auch Zugang zu Deinem privaten Schlüssel haben, solltest Du genau das wollen - Deinen Schlüssel widerrufen.
 
-h3. Nutze den primären Schlüssel nur zur Zertifizierung (und evtl. zum Signieren).
+bq. Das ist Standard seit GnuPG 2.1.
+
+h3. Nutze den primären Schlüssel nur zur Zertifizierung (und evtl. zum Signieren). Nutze einen separaten Unterschlüssel zum Verschlüsseln.
 
 Zum Verschlüsseln solltest Du Dir einen separaten Unterschlüssel (subkey) erstellen.
 
-h3. (Bonus) Nutze einen separaten Unterschlüssel (subkey) zum Signieren und hebe Deinen primären Schlüssel komplett offline auf
+Das ist der Standard ab GnuPG 1.4.18 (und eventuell früher). Wenn Dein Schlüssel mit einer älteren Version von OpenPGP erstellt wurde, solltest du neue Unterschlüssel erstellen, wie zum Signieren (weiter unten).
 
-In diesem Szenario wir Dein primärer Schlüssel nur für Zertifizierungen benutzt, die selten stattfinden.
+h3. Benutze einen separaten Unterschlüssel zum Signieren
+
+Standardmäßig benutzt GnuPG den gleichen Unterschlüssel zum Signieren (z.B. Signieren von Emailnachrichten) und Zertifizieren (signieren einen anderen Schlüssels). Es macht Sinn, diese beiden Ziele zu trennen, weil das eine wichtiger als das andere ist.
+
+In diesem Szenario wird Dein primärer Schlüssel nur für Zertifizierungen benutzt, die selten stattfinden.
+
+Erstelle einen Unterschlüssel im Menü @--edit-key@, mit dem Befehl @addkey@. In diesem Dialog kann die "Fähigkeit" des Schlüssels ausgewählt werden...
+
+h3. Benutze den primären Schlüssel ausschließlich offline
+
+Das ist schwierig, ermöglicht aber, den äußerst wichtigen primären Schlüssel zu schützen. Wenn er gestohlen wird, kann ein Angreifer neue Identitäten erstellen, bestehende widerrufen und sich vollständig als Du selbst ausgeben. Schlüssel "offline" zu speichern ist eine sichere Möglichkeit, sich gegen solche Angriffe zu schützen.
+
+Erstelle vorher einen eignen Schlüssel zum Signieren, sonst ist es nicht möglich, Emails ohne den Offline-Schlüssel zu signieren.
+
+Den primären Schlüssel zu extrahieren ist schwierig, aber damit sollte es klappen:
+
+bc. # primären Schlüssel extrahieren
+gpg -a --export-secret-key john.doe@example.com > secret_key
+# Unterschlüssel extrahieren, die später re-importiert werden
+gpg -a --export-secret-subkeys john.doe@example.com > secret_subkeys.gpg
+# *lösche* die geheimen Schlüssel aus deinem Schlüsselbund, sodass nur Unterschlüssel übrig bleiben
+$ gpg --delete-secret-keys john.doe@example.com
+Delete this key from the keyring? (y/N) y
+This is a secret key! - really delete? (y/N) y
+# Unterschlüssel reimportieren
+$ gpg --import secret_subkeys.gpg
+# Überprüfe, dass alles in Ordnung ist
+$ gpg --list-secret-keys
+# Entferne die Unterschlüssel von der Festplatte
+$ rm secret_subkeys.gpg
+
+Danach sollte der @geheime Schlüssel@ offline gelagert werden, z.B. auf einem Stick, den Du immer bei dir trägst, oder in einem geschützten Safe. Andere benutzen Smartcards, um ihn zu speichern und an einem physischen Schlüsselbund bei sich zu tragen.
+
+Stelle sicher, dass Widerrufszertifikate erstellt wurden.
+
+Überprüfe, dass der geheime Schlüssel fehlt mit @--list-secret-keys@ - es sollte @sec#@ anstatt @sec@ anzeigen.
+
+In manchen ungewöhnlichen Situationen kommt es vor, dass @--delete-secret-keys@ das geheime Schlüsselmaterial nicht vollständig entfernt und @--list-secret-keys@ immer noch @sec@ anstatt von @sec#@ anzeigt. In diesem Fall sollte das Verzeichnis @.gnupg@ entfernt werden, anstatt @--delete-secret-keys@ zu benutzen. Dann ist es nötig, trustdb und öffentliche Schlüssel wieder zu importieren, etwa so:
+
+bc. anstatt von gpg --delete-secret-keys john.doe@example.com, gehe so vor:
+$ mv .gnupg .gnupg.bak
+# Unterschlüssel reimportieren
+$ gpg --import secret_subkeys.gpg
+# Überprüfe, dass alles in Ordnung ist
+$ gpg --list-secret-keys
+# Entferne die Unterschlüssel
+$ rm secret_subkeys.gpg
+# Öffentlichen Schlüsselbund reimportieren
+$ gpg --homedir .gnupg.bak --export | gpg --import
+# trustdb reimportieren
+$ gpg --homedir .gnupg.bak --export-ownertrust | gpg --import-ownertrust
+# entferne das Backupverzeichnis von GPG (*alle* geheimen Schlüssel werden gelöscht
+$ rm -rf .gnupg.bak
+
+Bei diesen Vorgängen ist der Schlüssel im Klartext auf der Festplatte gespeichert. Es ist empfehlenswert, die Dateien sicher zu löschen (z.B. mit @nwipe@) anstelle mit @rm@. Moderne Speichermedien wie SSDs benutzen fortgeschrittene Firmware, die solche Befehle nicht tatsächlich ausführen und Spuren von privaten Schlüsseln übrig lassen können. Der beste Schutz davor ist Komplettverschlüsselung.
+
+Beachte, dass sich dieses Verfahren von Version zu Version ändern kann. Lies [[diese Diskussion -> http://security.stackexchange.com/questions/31594/what-is-a-good-general-purpose-gnupg-key-setup]] oder [[diesen Artikel -> https://www.paulfurley.com/gpg-for-humans-protecting-your-primary-key/]], oder [[diese Anleitung -> https://incenp.org/notes/2015/using-an-offline-gnupg-master-key.html]] für GnuPG 2.x und neuer.
 
 h3. OpenPGP Schlüssel überprüfen
 
@@ -144,7 +223,9 @@ Es gibt ein nützliches Tool, welches die folgenden Überprüfungen für Dich vo
 
 pre. sudo apt-get install hopenpgp-tools
 
-Die Befehlszeile, mit der Du diese Tests mit dem Tools ausführen kannst, lautet:
+Beachte: @hopenpgp-tools@ funktioniert aktuell nicht mit GnuPG 2.1 und darüber, weil öffentliche und private Schlüssel nun in @~/.gnupg/pubring.kbx@ gespeichert werden. @hkt@ erwartet diese aber in @~/.gnupg/pubring.gpg@ und gibt seit GnuPG 2.1 eine Fehlermeldung aus.
+
+Die Befehlszeile, um diese Tests ausführen, lautet:
 
 pre. hkt export-pubkeys '<fingerabdruck>' | hokey lint
 
@@ -158,9 +239,9 @@ Um festzustellen, ob Dein Schlüssel ein V3-Schlüssel ist, kannst Du folgendes 
 
 pre. gpg --export-options export-minimal --export '<fingerabdruck>' | gpg --list-packets | grep version
 
-h4. Primäre Schlüssel sollten DSA-2 oder RSA benutzen (besser RSA) und am Besten 4096 Bit oder länger sein
+h4. Primäre Schlüssel sollten mit RSA, ideal 3072 Bit, erstellt werden.
 
-Um zu überprüfen, ob Du DSA-2 oder RSA verwendest, kannst Du folgendes eingeben:
+Um zu überprüfen, ob Du RSA benutzt, verwende folgenden Befehl:
 
 pre. gpg --export-options export-minimal --export '<fingerabdruck>' | gpg --list-packets | grep -A2 '^:public key packet:$' | grep algo
 

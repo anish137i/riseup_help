@@ -1,0 +1,96 @@
+@title = 'Phishing'
+
+h2. O que é?
+
+*Phishing* é quando alguém envia um e-mail fingindo ser de uma entidade à qual não pertence com o propósito de obter informações suas. Estas podem ser CPF, números de conta bancária e cartão de crédito, senhas, além de outras informações sigilosas. E-mails desse tipo geralmente seguem o seguinte formato:
+
+<pre>
+De: contato@empresa_ou_organizacao.com
+Para: voce@riseup.net
+Assunto: Aviso de Conta
+
+Precisamos verificar os detalhes da sua conta. Por favor, responda a esta mensagem preenchendo suas informações nos espaços abaixo. Se não responder, você pode perder o acesso à conta.
+
+login: _________________
+senha: _________________
+</pre>
+
+*Se você receber um e-mail como esse, NÃO responda.*
+
+h2. Como isso afeta as contas do Riseup?
+
+As contas Riseup são alvos frequentes. *Nós nunca pediremos sua senha por e-mail!* Um e-mail que afirme ter sido enviado pelo Riseup e peça para você responder com sua senha *não é do Riseup*.
+
+Se você receber um e-mail com um link, não clique; copie-o e cole-o na barra de endereços ou, melhor ainda, digite-o - o domínio pode ser, por exemplo, https://ríseup.net em vez de https://riseup.net, e você pode não perceber na hora a diferença (viu o acento no "i"?).
+
+h2. Exemplos de e-mails fraudados
+
+Estes são alguns exemplos de e-mails (traduzidos do inglês) enviados por *"pescadores"* a contas Riseup com o propósito de *sequestrá-las*.
+
+*Exemplo I*
+
+<pre>
+Para: abdecom@riseup.net
+Assunto: ATUALIZE SUA CONTA DE E-MAIL RISEUP!
+De: ATUALIZAÇÃO RISEUP <upgrade@riseup.net>
+
+Caro(a) Assinante Riseup,
+
+Sua conta de e-mail Riseup pode ser bloqueada devido a atividades incomuns.
+
+Avisamos que sua conta de e-mail precisa ser verificada, uma vez que estamos atualizando a base de dados do webmail.
+
+>> Clique Aqui Para Verificar Sua Conta <<
+
+Por favor, clique no lik acima para atualizar sua conta e impedir que ela seja fechada.
+
+É urgente que você responda.
+
+Agradecemos seu tempo e sua ajuda!
+
+Atenciosamente,
+© 2011 Suporte de E-mail Riseup.
+</pre>
+
+*Exemplo II*
+
+<pre>
+De: Segurança WebAdmin <no_reply@riseup.net>
+Assunto: Alerta de conta®
+Para: destinatarios-ocultos:;
+
+Prezado(a) cliente:
+
+Devido a preocupações com a segurança e a integridade da Segurança Riseup.Net, emitimos esta mensagem de aviso
+
+Alertamos que sua conta Riseup.Net precisa ser verificada, pois nossa base de dados SSL foi atualizada. Para verificar sua conta Riseup.Net e poder acessá-la no futuro, por favor, clique no link de verificação abaixo para atualizá-la e completar as informações requeridas:
+
+http//mail.riseup.net/SSL [<< esse endereço é de um site que não é o do Riseup, mas é construído para parecer-se com ele]
+
+Este e-mail foi enviado para todos os nossos clientes. Recentemente, reparamos que muitos clientes têm recebido uma mensagem falsa pedindo para enviarem seu login e senha por e-mail.
+
+Lembre-se que Riseup.Net jamais pedirá seu ID e senha por e-mail. Apenas clique no link acima, preencha as informações requeridas corretamente para verificar suas informações e sua conta Riseup.Net será automaticamente atualizada na nossa base de dados.
+
+Atenção: Se não verificar sua conta, ela poderá ser desativada.
+
+Agradecemos pela cooperação.
+
+Atenciosamente,
+Equipe de Segurança do WEBMAIL Riseup.Net
+
+Tíquete do e-mail: R0929NT4
+</pre>
+
+Este ataque de phishing foi particularmente esperto. Quem fraudou o e-mail previu que algumas pessoas saberiam que o Riseup jamais pediria senhas por e-mail. Criou, então, um link, que parece com o de uma página do site do Riseup, para uma página quase exatamente igual a uma página do site, na expectativa de induzi-las a informar suas senhas.
+
+É mais seguro nunca clicar em links de e-mails que pedem sua senha. Sempre digite "user.riseup.net" manualmente na barra de endereços do seu navegador.
+
+h2. Ataques homográficos
+
+Esse tipo de golpe se aproveita da semelhança de certas letras pertencentes a diferentes conjuntos de caracteres. Homógrafos são caracteres semelhantes, mas um pertencente ao alfabeto latino e o outro ao cirílico, por exemplo. O sistema de nomes de domínio internacionalizados (IDN) não impõe restrição à mistura de caracteres de conjuntos distintos. Assim, torna-se impossível distinguir entre letras que são exibidas da mesma forma.
+
+A estratégia mais segura é evitar copiar URLs de fontes inseguras e sempre digitá-las diretamente na barra de endereços, da mesma forma que não se deve copiar código de sites diretamente para a linha de comando, mas passá-los antes por um editor de texto para checagem.
+
+Outra medida de proteção possível é desativar a internacionalização de nomes de domínio em aplicativos (IDNA). "Conhecido desde 2005":http://www.internetnews.com/dev-news/article.php/3481651/Firefox+Others+at+Phishing+Risk.htm, este problema foi "relatado à Mozilla em 2013":https://www.mozilla.org/en-US/security/advisories/mfsa2013-61 e resultou na restrição de nomes de domínio a caracteres específicos e no uso de Punycode para nomes de domínio contendo outros caracteres. A "lista branca" de IDN do Firefox podem ser configurada em @about:config@ -> *network.IDN*.
+
+Mais informações sobre o assunto podem ser encontradas na "Wikipédia":https://en.wikipedia.org/wiki/IDN_homograph_attack.

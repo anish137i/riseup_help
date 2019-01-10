@@ -1,0 +1,23 @@
+@title = 'Cota'
+
+h2. Por que Riseup não dá mais cota?
+
+Nós gostaríamos, mas é muito caro. Discos rígidos são baratos, mas os computadores que os contém e o aluguel do espaço para abrigá-los requerem mais recursos do que podemos dispor.
+
+h2.  Por que a minha cota não é atualizada?
+
+Calcular a quantidade exata de cota usada consumiria muito tempo do servidor. Em vez disso, faz-se uma estimativa da cota. Frequentemente, a estimativa está muito perto do valor real; às vezes, porém, ela pode estar completamente errada. Você só excederá a cota (e deixará de receber novas mensagens) se tiver de fato usado todo o espaço de armazenamento disponível.
+
+Para economizar tempo, o servidor só atualiza a estimativa de cota quando você recebe uma nova mensagem. Assim, mesmo se você apagar algumas mensagens, sua cota não parecerá mudar até a próxima vez que você receber um e-mail.
+
+h2.  Para onde está indo minha cota?
+
+# Entre em https://mail.riseup.net.
+# Clique em *Configurações*.
+# No menu pop-up, selecione *Gerenciar pastas*.
+# Nesta janela, clique em cada pasta da sua conta.
+# Na seção *Informação*, clique em *Exibir o tamanho da pasta*.
+
+O tamanho da pasta será mostrado em formato legível.
+
+Todas as mensagens em todas as pastas contribuem para somar sua cota, inclusive aquelas nas [[pastas especiais => email-folders]] Lixeira, Enviadas e Spam.
